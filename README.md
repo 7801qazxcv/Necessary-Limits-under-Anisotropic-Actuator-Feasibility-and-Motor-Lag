@@ -1,18 +1,21 @@
 # Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag — replication bundle
 
-**Status: LOCAL PREPARATION ONLY. This bundle is not yet public.**
-The GitHub repository `7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag`
-was verified via the GitHub API on 2026-11-19 to be **empty** (`size=0`, `contents` 404,
-`git/trees` and `commits` 409). The manuscript's Data-availability statement therefore
-remains "available from the corresponding author upon reasonable request" until this
-bundle is pushed and the API confirms the files exist. Citing an empty repository in a
-journal submission would be a false availability claim.
+**Status: PUBLIC REPLICATION BUNDLE.** This repository holds the scripts, result
+artifacts, frozen preregistration criteria and manuscript source for the paper.
+It is a **pre-submission** manuscript; see "Author-side decisions still open".
+
+The repository was populated on 2026-11-19 and verified through the GitHub API:
+one commit, a non-truncated recursive tree, and every blob SHA matching the local
+commit. The manuscript's Data-availability statement still reads "available from
+the corresponding author upon reasonable request" — citing this repository in the
+paper is an author-side decision that has not been taken automatically.
 
 ## What is here
 - Frozen preregistration criteria (`preregistration_*.md`) and all amendments, so the
   timeline of every criterion change is auditable.
 - Simulation / audit scripts and their on-disk result artifacts (JSON).
-- The manuscript LaTeX source, bibliography, figures, provenance table and baseline set.
+- The manuscript LaTeX source, the compiled PDF (`paper/main.pdf`), bibliography,
+  figures, provenance table and baseline set.
 - `MANIFEST.md` with SHA-256 of every file.
 
 ## What is deliberately excluded
@@ -43,7 +46,8 @@ intentionally retained so the check remains functional.
 
 ## Author-side decisions still open
 - **Preprint policy**: whether a pre-submission manuscript may be made public at all.
-  The included `paper/main.tex` and `build_manuscript.py` contain author names,
-  affiliations, ORCID and e-mail addresses exactly as they appear in the manuscript.
+  The included `paper/main.tex`, `paper/main.pdf` and `build_manuscript.py` contain
+  author names, affiliations, ORCID and e-mail addresses exactly as they appear in
+  the manuscript.
 - Repository licence, CRediT, funding, AI-disclosure approval and submission approval.
-- Confirmation that the pushed content matches this MANIFEST byte-for-byte.
+- Whether to replace the Data-availability statement with this repository's URL.
