@@ -1,0 +1,56 @@
+{
+ "quadrotor moment of inertia Jx Jy Jz kg m2 small UAV experimental identified": [
+  {
+   "t": "The Design and Implementation of 4 DOF Control of the Quadrotor",
+   "u": "https://sciencedirect.com/science/article/pii/S1474667015373006",
+   "d": "The quadrotor is a type of UAV (Unmanned Aerial Vehicles) which is very popular in research field in the recent years [1]. This paper describes a modelling and the real realisation of this type of robot.\n\nIn this paper, "
+  },
+  {
+   "t": "Real Time Parameter Identification of the Inertia Tensor for a Quad-rotor mini-aircraft using Adaptive Control",
+   "u": "https://sciencedirect.com/science/article/pii/S147466701540268X",
+   "d": "Recently in [11] the authors have proposed an adaptive feedback control law for asymptotic attitude and altitude stabilization of a Quad-rotor using angular rates and absolute orientation with respect to the inertial fra"
+  },
+  {
+   "t": "Methodology for identifying quadrotor parameters, attitude estimation and control",
+   "u": "https://ieeexplore.ieee.org/document/6584281",
+   "d": "In this research a method is proposed to identify all the quadrotor's structure parameters with simple and more accurate method. For the rotor parameters, a method is introduced that can be implemented easily without any"
+  },
+  {
+   "t": "Development of a Low-Cost Experimental Quadcopter Testbed Using an Arduino Controller and Software",
+   "u": "https://arxiv.org/html/1508.04886v1",
+   "d": "Some of the quadcopter testbed parameters are listed in Table 3 for convenience. The inertia values are calculated using moment of inertia equations and the parallel axis theorem which can be found in any civil engineeri"
+  },
+  {
+   "t": "EKF-Based Parameter Identification of Multi-Rotor Unmanned Aerial VehiclesModels",
+   "u": "https://europepmc.org/article/MED/31561517",
+   "d": "This work presents a method for estimating the model parameters of multi-rotor unmanned aerial vehicles by means of an extended Kalman filter. Different from test-bed based identification methods, the proposed approach e"
+  }
+ ],
+ "quadrotor motor time constant first order lag rotor dynamics ms thrust torque constant": [
+  {
+   "t": "Tilt-Rotor Quadcopter with Learned Residual Control and Mode-Dependent State Estimation",
+   "u": "https://arxiv.org/html/2610.31051v1",
+   "d": "Tilt-rotor quadcopters redirect thrust for translation without banking, but complicate modeling, state estimation, and disturbance rejection. This paper presents a simulation-based flight stack for a 2.00 kg tilt-rotor q"
+  },
+  {
+   "t": "Data-Driven System Identification of Quadrotors Subject to Motor Delays",
+   "u": "https://arxiv.org/pdf/2404.07837",
+   "d": "Inertia matrix / Motor delay time constant\n${\\color[rgb]{0.86328125,0.078125,0.234375}\\definecolor[named]{pgfstrokecolor}{%\nrgb}{0.86328125,0.078125,0.234375}K_{\\tau_{i}}}$ / ${\\color[rgb]{0.86328125,0.078125,0.234375}\\d"
+  },
+  {
+   "t": "Physics-Aware End-to-End Deep Reinforcement Learning for Quadcopter Control with Actuator Dynamics",
+   "u": "http://arxiv.org/abs/2607.25985",
+   "d": "This paper investigates a physics-aware, end-to-end deep reinforcement learning (DRL) approach that acts directly on low-level body inputs, total thrust and body torques $(T, \\tau_x, \\tau_y, \\tau_z)$, and closes the loop"
+  },
+  {
+   "t": "skillsbench/tasks/drone-planning-control/environment/skills/motor-model-dynamics/SKILL.md at main · benchflow-ai/skillsbench",
+   "u": "https://github.com/benchflow-ai/skillsbench/blob/main/tasks/drone-planning-control/environment/skills/motor-model-dynamics/SKILL.md",
+   "d": "The 4×4 allocation matrix maps `[F, Mx, My, Mz]` to squared motor RPMs. For an X-frame with arm length `d`, thrust coefficient `cT`, and torque coefficient `cQ`:\n```\nmotor:  1      2      3      4\nThrust:         +cT    "
+  },
+  {
+   "t": "Data-Driven System Identification of QuadrotorsSubject to Motor Delays",
+   "u": "https://arxiv.org/html/2404.07837v1",
+   "d": "Recently non-linear control methods like Model Predictive Control (MPC) and Reinforcement Learning (RL) have attracted increased interest in the quadrotor control community. In contrast to classic control methods like ca"
+  }
+ ]
+}

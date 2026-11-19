@@ -1,0 +1,39 @@
+{
+ "2404.07837": {
+  "OK": true,
+  "title": "Data-Driven System Identification of Quadrotors Subject to Motor Delays",
+  "authors": [
+   "Jonas Eschmann",
+   "Dario Albani",
+   "Giuseppe Loianno"
+  ],
+  "published": "2024-04-11",
+  "source": "arXiv API id_list (live)",
+  "values_used": [
+   "T_m=0.072s",
+   "T_m_manufacturer=0.073s",
+   "T_m_prior=0.065s",
+   "Izz/Ixx mean=1.832",
+   "inertia table x500/Flightmare/Iris/Crazyflie"
+  ]
+ },
+ "1508.04886": {
+  "OK": true,
+  "title": "Development of a Low-Cost Experimental Quadcopter Testbed Using an Arduino Controller and Software",
+  "authors": [
+   "Ankyda Ji",
+   "Kamran Turkoglu"
+  ],
+  "published": "2015-08-20",
+  "source": "arXiv API id_list (live)",
+  "values_used": [
+   "m=1.8kg",
+   "Ixx=Iyy=7.06e-3",
+   "Izz=7.865e-3"
+  ],
+  "rejected": [
+   "l=8.25 meters (unit error)"
+  ]
+ },
+ "prior_art_dois_verified_in_earlier_round": "cites_verified.json (6 Crossref DOIs, 2 year corrections)"
+}

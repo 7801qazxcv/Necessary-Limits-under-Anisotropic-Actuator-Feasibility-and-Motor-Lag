@@ -1,0 +1,93 @@
+{
+ "status": "DONE_CORRECTED",
+ "prereg": "preregistration_m1_m3.md",
+ "identity_max_abs_error": 1.3877787807814457e-17,
+ "bound_max_violation": 1.3877787807814457e-17,
+ "gamma": {
+  "roll": 0.011000000000000001,
+  "pitch": 0.011000000000000001,
+  "yaw": 0.0
+ },
+ "J_diag": [
+  0.013,
+  0.013,
+  0.024
+ ],
+ "observed_omega_perp_max": 0.5830996187463792,
+ "observed_gyro_n_max": 0.0006936745203528546,
+ "n_rollouts": 81,
+ "a1free_bounds": {
+  "roll": {
+   "tau_max_n": 1.2208622841254457,
+   "J_n": 0.013,
+   "gamma": 0.011000000000000001,
+   "dbar": 0.032,
+   "d_eff": 0.03387002840960195,
+   "existence": true,
+   "omega_lower_bound_max_Aeff": 132.26502072057687,
+   "L_momentum_threshold": 1.7194452693674993,
+   "claim_level": "angular-momentum necessary condition (NOT attitude envelope)",
+   "attitude_extension_valid": false
+  },
+  "pitch": {
+   "tau_max_n": 1.2208622841254457,
+   "J_n": 0.013,
+   "gamma": 0.011000000000000001,
+   "dbar": 0.032,
+   "d_eff": 0.03387002840960195,
+   "existence": true,
+   "omega_lower_bound_max_Aeff": 132.26502072057687,
+   "L_momentum_threshold": 1.7194452693674993,
+   "claim_level": "angular-momentum necessary condition (NOT attitude envelope)",
+   "attitude_extension_valid": false
+  },
+  "yaw": {
+   "tau_max_n": 0.15696000000000002,
+   "J_n": 0.024,
+   "gamma": 0.0,
+   "dbar": 0.032,
+   "d_eff": 0.032,
+   "existence": true,
+   "omega_lower_bound_max_Aeff": 7.483000000000031,
+   "L_momentum_threshold": 0.17959200000000075,
+   "claim_level": "angular-momentum necessary condition (NOT attitude envelope)",
+   "attitude_extension_valid": false
+  }
+ },
+ "a1free_bounds_ORIGINAL_preregistered_WRONG": {
+  "roll": {
+   "tau_max_n": 1.2208622841254457,
+   "J_n": 0.013,
+   "gamma": 0.011000000000000001,
+   "dbar": 0.032,
+   "d_eff": 0.03387002840960195,
+   "existence": true,
+   "L_free": 0.13720581755117667,
+   "L_adversarial": 0.13736014943342298,
+   "ratio_free_over_adv": 0.9988764435472522
+  },
+  "pitch": {
+   "tau_max_n": 1.2208622841254457,
+   "J_n": 0.013,
+   "gamma": 0.011000000000000001,
+   "dbar": 0.032,
+   "d_eff": 0.03387002840960195,
+   "existence": true,
+   "L_free": 0.13720581755117667,
+   "L_adversarial": 0.13736014943342298,
+   "ratio_free_over_adv": 0.9988764435472522
+  },
+  "yaw": {
+   "tau_max_n": 0.15696000000000002,
+   "J_n": 0.024,
+   "gamma": 0.0,
+   "dbar": 0.032,
+   "d_eff": 0.032,
+   "existence": true,
+   "L_free": 0.0720221635191822,
+   "L_adversarial": 0.0720221635191822,
+   "ratio_free_over_adv": 1.0
+  }
+ },
+ "downgrade_note": "PREREG ERROR FOUND AND CORRECTED: with A1 relaxed, quaternion kinematics make phi != int(omega_n dt), so the phi_min/L* construction of Theorem 1 does not extend. Lemma 2 is downgraded to an angular-momentum-level necessary condition (pointwise omega_n lower bound). The original 'L_free <= L*' numbers are kept under a1free_bounds_ORIGINAL_preregistered_WRONG for audit and MUST NOT be quoted as a theorem. No A1-free attitude-envelope bound is claimed."
+}

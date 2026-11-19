@@ -1,0 +1,101 @@
+{
+ "platform": "Crazyflie (brushed), single identified vehicle",
+ "source_file": "https://raptor.rl.tools/blob/registry/crazyflie.json",
+ "source_sha256_note": "downloaded to crazyflie_params_raw.json (143353 bytes)",
+ "provenance": "machine-readable parameter registry; rotor_torque_constants=0.004665 equals K_tau=4.665e-3 identified in Eschmann, Albani & Loianno, arXiv:2404.07837 (verified earlier, [P1]), consistent with same-origin identification data. NOT a cross-platform mix: every value below comes from this one registry entry.",
+ "values_from_source": {
+  "m_kg": 0.0306,
+  "g": 9.81,
+  "rotor_positions_xy_m": [
+   [
+    0.028,
+    -0.028
+   ],
+   [
+    -0.028,
+    -0.028
+   ],
+   [
+    -0.028,
+    0.028
+   ],
+   [
+    0.028,
+    0.028
+   ]
+  ],
+  "rotor_torque_directions_z": [
+   -1,
+   1,
+   -1,
+   1
+  ],
+  "rotor_torque_constants_m": 0.004665,
+  "rotor_thrust_coefficients": [
+   0.003525,
+   0.014373,
+   0.09223
+  ],
+  "rotor_time_constants_rising_s": 0.055455,
+  "rotor_time_constants_falling_s": 0.249394,
+  "hovering_throttle_relative": 0.726139,
+  "action_limit": [
+   0.0,
+   1.0
+  ],
+  "J_diag_kgm2": [
+   9e-06,
+   1e-05,
+   1.7e-05
+  ],
+  "J_note": "Jx=9e-6, Jy=1e-5, Jz=1.7e-5; source diagonal. Jz/Jx=1.889, close to [P1] mean 1.832."
+ },
+ "mapped_to_model": {
+  "m": 0.0306,
+  "g": 9.81,
+  "a": 0.028,
+  "kappa": 0.004665,
+  "J": [
+   9e-06,
+   1e-05,
+   1.7e-05
+  ],
+  "u_max": 0.132039,
+  "u_hov": 0.075047,
+  "TM_LIST": [
+   0.055455,
+   0.249394
+  ],
+  "D_AMP": 0.00013766,
+  "D_BAR": 0.00022026,
+  "T_LP": 0.02,
+  "PHI_MAX_deg": 60.0,
+  "W_TH": 0.2,
+  "T_HOR": 1.5,
+  "DT": 0.0005,
+  "T_FIX": 0.00025,
+  "N_DW": 160,
+  "per_tm_calibration": true,
+  "dw_grid_max": 30.0,
+  "result_file": "probe_v2_REAL_results.json"
+ },
+ "mapping_rationale": {
+  "a": "rotor x/y offsets are +/-0.028 m; our mixer MIX_X=a[1,1,-1,-1], MIX_Y=a[-1,1,1,-1]; magnitude a=0.028 m (sign convention differs; support-function magnitudes unaffected).",
+  "kappa": "yaw torque = K_tau * thrust, so cQ/cT = K_tau = 0.004665 m; source torque directions [-,+,-,+] vs our [+,-,+,-] -> global sign flip, magnitude identical.",
+  "u_hov": "F/4 = m*g/4 = 0.0750465 N (hover equilibrium, authoritative).",
+  "u_max": "SOURCE INTERNAL INCONSISTENCY: f(s)=c0+c1*s+c2*s^2 gives f(0.726139)=0.062593 N != mg/4=0.075047 N (-16.6%). We do NOT copy the absolute curve; we use only its shape ratio u_max = u_hov * f(1)/f(s_hover) = 0.075047 * (0.110128/0.062593) = 0.132039 N. Balances U=[0,u_max]^4 with sum(u)=F.",
+  "TM_LIST": "real actuator has ASYMMETRIC rising/falling time constants (0.055455 / 0.249394 s); our model assumes symmetric first-order lag. Honest bracketing: run two symmetric models at the two measured constants, do not invent an averaged value. Asymmetry documented as model limitation.",
+  "D_AMP_D_BAR": "disturbance level is a design parameter, not platform-identified; scaled to preserve the SAME dimensionless disturbance-to-authority ratio rho=dbar/(a*F) as the synthetic run: rho=0.032/(0.1556*7.848)=0.02621 -> real dbar=0.02621*(0.028*0.300186)=2.2026e-4 N*m; D_AMP=dbar/1.6.",
+  "T_LP": "controller estimator time constant: design choice, unchanged from synthetic run; NOT claimed as identified.",
+  "cT_Omega": "NOT USED. The identified model works in rotor thrust (force) units via a throttle polynomial; RPM-level quantities (cT, Omega_hover, Omega_max) are not separately identified in this registry and are not needed for attitude-only analysis. Hover-RPM sanity check (control-sim-pitfalls §9) is therefore marked N/A for this config, not silently passed.",
+  "Phi_max_W_th_T_hor": "recovery-envelope DESIGN parameters, unchanged; not platform-identified.",
+  "per_tm_calibration": "real actuator has rising 0.055455 s / falling 0.249394 s; a single gain set tuned at 0.055 diverges at 0.249 even with dw=0 (verified). Each Tm gets its own 25-combo equal-budget calibration.",
+  "dw_grid_max": "design probe on real config showed max first_fail_dw=22.81 rad/s; grid extended to 30 to avoid ceiling-truncated fake gap (Amendment-1 class)."
+ },
+ "known_limitations": [
+  "Actuator asymmetry (rising vs falling time constants) bracketed, not modeled.",
+  "Source registry is a software artifact, not a peer-reviewed paper; Table 1 must cite [P1] arXiv:2404.07837 as the identification source and this registry as the machine-readable parameter file.",
+  "Source thrust polynomial does not satisfy its own hover equilibrium; only its shape ratio is used.",
+  "No SITL / hardware validation; conclusions remain numerical + analytical."
+ ]
+}

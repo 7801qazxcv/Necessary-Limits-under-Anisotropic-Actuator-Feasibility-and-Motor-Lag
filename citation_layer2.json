@@ -1,0 +1,515 @@
+{
+ "layer": 2,
+ "n_rows": 24,
+ "red_flags_checked": [
+  "P1 mischaracterising prior work",
+  "P2 domain transplant",
+  "P3 method/experiment-type mismatch",
+  "P4 duplicate DOI",
+  "P5 over-strong attribution",
+  "P6 polarity flip",
+  "P7 right conclusion wrong key",
+  "P8 self-coined term",
+  "P9 no Crossref abstract -> publisher/arXiv needed"
+ ],
+ "summary": {
+  "SUPPORTED": 16,
+  "SUPPORTED_NUANCE": 8,
+  "MISATTRIBUTION": 0,
+  "preprints": [
+   "10.2139/ssrn.7536970"
+  ],
+  "no_doi_requires_publisher_verification": [
+   "NASA_NTRS_20120014563"
+  ]
+ },
+ "rows": [
+  {
+   "key": "10.3390/app14093639",
+   "id_type": "DOI",
+   "id": "10.3390/app14093639",
+   "source_title": "Finite-Time Attitude Control of Quadrotor Unmanned Aerial Vehicle with Disturbance and Actuator Saturation",
+   "source_venue": "Applied Sciences",
+   "source_year": 2024,
+   "source_authors": [
+    "Zheng Zhang",
+    "Xingwei Li",
+    "Lilian Zhang"
+   ],
+   "source_abstract": "This paper introduces a nonlinear dynamic inversion control algorithm designed to address unknown disturbances and actuator saturation issues in unmanned aerial vehicle (UAV) attitude control. The algorithm is based on a combination of finite-time disturbance observer and anti-saturation auxiliary system, which ensures the rapid convergence of attitude tracking error. Firstly, based on the Newton–Euler equations, this paper establishes a model of the attitude system for quadrotor UAVs, and this paper eliminates the small-angle flight assumption. Secondly, considering the actuator saturation problem, an anti-saturation auxiliary control system is designed to shorten the time when the control volume is in the saturation interval and achieve finite-time convergence of the attitude error. And then, to improve the robustness of the controller, this paper proposes a disturbance observer based on the finite-time stability theory, which achieves a continuous smooth output of the observation results by introducing a hyperbolic tangent function in the observer, so that the observation error can be converged to zero in a finite time. Finally, it is demonstrated by Simulink simulation that the attitude error and the observation error converge quickly to zero.",
+   "abstract_available": true,
+   "our_claim": "Finite-time attitude control combined with a finite-time disturbance observer and an anti-saturation auxiliary system has been demonstrated in simulation.",
+   "stream": "A",
+   "p_flag_prescreen": "P3",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: NDI + FT disturbance observer + anti-saturation auxiliary, Simulink simulation. Pure simulation, no impulse, no recoverability bound."
+  },
+  {
+   "key": "10.1016/j.isatra.2025.08.030",
+   "id_type": "DOI",
+   "id": "10.1016/j.isatra.2025.08.030",
+   "source_title": "Fixed-time anti-saturation and fault-tolerant control for quadrotor UAVs using event-trigger adaptive barrier sliding mode control",
+   "source_venue": "ISA Transactions",
+   "source_year": 2025,
+   "source_authors": [
+    "Amin Najafi",
+    "Saleh Mobayen",
+    "Abolfazl Jalilvand"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Fixed-time anti-saturation fault-tolerant control with event-triggered adaptive barrier sliding mode addresses faults, saturation and disturbances.",
+   "stream": "A",
+   "p_flag_prescreen": "P9",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Crossref has NO abstract; publisher (ScienceDirect) abstract fragment in prior_art_scan confirms ABNFTSMC with faults/saturation/disturbances. Mark abstract_source=publisher."
+  },
+  {
+   "key": "10.1155/2020/5493686",
+   "id_type": "DOI",
+   "id": "10.1155/2020/5493686",
+   "source_title": "Finite-Time Attitude Control for Quadrotor with Input Constraints and Disturbances",
+   "source_venue": "Mathematical Problems in Engineering",
+   "source_year": 2020,
+   "source_authors": [
+    "Zijun Gao",
+    "Jin Wang",
+    "Yaping Tian"
+   ],
+   "source_abstract": "This paper investigates the adaptive output feedback attitude control of a quadrotor. First, a nonsingular terminal sliding-mode variable and auxiliary variable are introduced into a closed-loop structure. Meanwhile, a fuzzy logic system is incorporated into an adaptive algorithm to compensate for the adverse influence caused by lumped disturbances including system uncertainty and external disturbances on the attitude adjustment performance of a quadrotor. Then, a novel finite-time output feedback controller equipped with the saturation suppression algorithm is designed. Rigorous proof shows that the design control strategy ensures the closed-loop system stability and guarantees the attitude of the spacecraft to track desired command signals in finite time. Simulation results are presented to illustrate the performance of the proposed control scheme.",
+   "abstract_available": true,
+   "our_claim": "Finite-time output-feedback attitude control with saturation suppression and fuzzy lumped-disturbance compensation exists (2020).",
+   "stream": "A",
+   "p_flag_prescreen": "P3",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: nonsingular terminal SMMC + fuzzy adaptive + saturation suppression, finite-time tracking, simulation. No impulse/state-jump."
+  },
+  {
+   "key": "10.1007/s12555-024-0402-6",
+   "id_type": "DOI",
+   "id": "10.1007/s12555-024-0402-6",
+   "source_title": "Adaptive Finite-time Control of Quadrotor UAVs With Asymmetric Input Saturation",
+   "source_venue": "International Journal of Control, Automation and Systems",
+   "source_year": 2025,
+   "source_authors": [
+    "Zhong-Quan Hu",
+    "Chang-Chun Hua",
+    "Ya-Na Yang",
+    "Liu-Liu Zhang"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Adaptive finite-time control with ASYMMETRIC input saturation has been studied for quadrotors.",
+   "stream": "A",
+   "p_flag_prescreen": "P9",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Crossref NO abstract; title confirms asymmetric input saturation. Note: 'asymmetric saturation' is NOT the same as the asymmetric rising/falling motor time constants in our real-platform config."
+  },
+  {
+   "key": "2002.09425",
+   "id_type": "arXiv",
+   "id": "2002.09425",
+   "source_title": "Upset Recovery Control for Quadrotors Subjected to a Complete Rotor Failure from Large Initial Disturbances",
+   "source_venue": "arXiv preprint arXiv:2002.09425",
+   "source_year": 2020,
+   "source_authors": [
+    "Sihao Sun",
+    "Matthias Baert",
+    "Bram Adriaan Strack van Schijndel",
+    "Coen de Visser"
+   ],
+   "source_abstract": "This study has developed a fault-tolerant controller that is able to recover a quadrotor from arbitrary initial orientations and angular velocities, despite the complete failure of a rotor. This cascaded control method includes a position/altitude controller, an almost-global convergence attitude controller, and a control allocation method based on quadratic programming. As a major novelty, a constraint of undesirable angular velocity is derived and fused into the control allocator, which significantly improves the recovery performance. For validation, we have conducted a set of Monte-Carlo simulation to test the reliability of the proposed method of recovering the quadrotor from arbitrary initial attitude/rate conditions. In addition, real-life flight tests have been performed. The results demonstrate that the post-failure quadrotor can recover after being casually tossed into the air.",
+   "abstract_available": true,
+   "our_claim": "Quadrotor recovery from arbitrary large initial attitude/angular-rate conditions has been validated with Monte-Carlo AND real flight tests.",
+   "stream": "B",
+   "p_flag_prescreen": "P3",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract + ICRA DOI 10.1109/ICRA40945.2020.9197239: fault-tolerant recovery from COMPLETE ROTOR FAILURE; real flight tests. Disturbance is actuator loss, NOT external angular impulse; guarantee is controller-dependent sufficiency, no controller-independent non-recoverability bound."
+  },
+  {
+   "key": "2610.15867",
+   "id_type": "arXiv",
+   "id": "2610.15867",
+   "source_title": "REFLEX: A Learned On-Board Reflex for Robust Autonomous Collision Recovery of Soft Quadrotors",
+   "source_venue": "arXiv preprint arXiv:2610.15867",
+   "source_year": 2026,
+   "source_authors": [
+    "Jakob Hermeler",
+    "Luca Girardi",
+    "Gabriel Maquignaz",
+    "Stefan Leutenegger",
+    "Stefano Mintchev"
+   ],
+   "source_abstract": "Collision-resilient airframes allow quadrotors to survive impacts, but do not ensure autonomous post-collision recovery. Innovation gating in stock onboard estimators often rejects valid external velocity measurements after high-speed impacts, compromising recovery. We present REFLEX, a collision-recovery flight mode that runs entirely on the flight controller, requiring neither contact sensors nor a companion computer. Its proprioceptive recurrent policy stabilizes the vehicle without position, velocity, heading, or altitude estimates. The translational estimate is reinitialized while REFLEX is active, and a trust gate checks estimator consistency before returning control to the stock autopilot. The policy is trained in simulation using proximal policy optimization, with episodes initialized from post-impact states measured in 47 real collisions. In hardware experiments, REFLEX recovered 19 of 22 wall impacts at 5.03 $\\pm$ 0.09 m/s, compared with 1 of 14 for the matched stock autopilot. These included 15 consecutive recoveries in a single flight. A separate exploratory flight demonstrated two additional recoveries at 6.02 and 6.05 m/s within the same flight, exceeding the previously reported velocity for autonomous wall-collision recovery by 64%.",
+   "abstract_available": true,
+   "our_claim": "Autonomous post-collision recovery has hardware evidence (47 real collisions, 19/22 wall-impact recovery).",
+   "stream": "B",
+   "p_flag_prescreen": "P3",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: on-board RL reflex, hardware experiments. Learning-based controller; no analytic recovery boundary; soft collision-resilient airframe."
+  },
+  {
+   "key": "2603.14698",
+   "id_type": "arXiv",
+   "id": "2603.14698",
+   "source_title": "Dual Quaternion Based Contact Modeling for Fast and Smooth Collision Recovery of Quadrotors",
+   "source_venue": "arXiv preprint arXiv:2603.14698",
+   "source_year": 2026,
+   "source_authors": [
+    "Valentin Gaucher",
+    "Wenlong Zhang"
+   ],
+   "source_abstract": "Unmanned aerial vehicles (UAVs) operating in cluttered environments require efficient and accurate impact modeling to maintain stability post collisions, however classical impulse contact models decouple the normal and tangential components. This letter presents a dual quaternion impulse reset map directly on the SE(3) manifold. By operating on the unified spatial twist (unified linear and angular velocities), the proposed formulation retains the cross-coupling between normal and tangential impulse components in a single closed-form expression, and recovers the classical decoupled Newton impulse model as a special case. A recovery controller is designed that couples linear and angular momentum to enforce kinetic energy dissipation across impacts. Hardware-in-the-loop benchmarks demonstrate a 24\\% reduction in execution latency compared to an optimized matrix-based implementation, and a 20\\% reduction relative to a position-plus-quaternion (PQ) formulation. MuJoCo simulations across Monte Carlo sweeps over impact angles and friction coefficients show a 50.8\\%-75.1\\% reduction in position root-mean-square error (RMSE) and a 68.7\\%-85\\% decrease in peak kinetic energy compared to published linear-admittance baselines.",
+   "abstract_available": true,
+   "our_claim": "Impulse reset maps on SE(3) with normal/tangential coupling have been modeled for collision recovery.",
+   "stream": "B",
+   "p_flag_prescreen": "P9",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Abstract: dual-quaternion impulse reset map, HIL + MuJoCo MC. This is a MORE complete impact model than our angular-impulse jump; cite as limitation evidence, not novelty."
+  },
+  {
+   "key": "10.2514/1.g001747",
+   "id_type": "DOI",
+   "id": "10.2514/1.g001747",
+   "source_title": "Fast Computable Recoverable Sets and Their Use for Aircraft Loss-of-Control Handling",
+   "source_venue": "Journal of Guidance, Control, and Dynamics",
+   "source_year": 2017,
+   "source_authors": [
+    "Kevin McDonough",
+    "Ilya Kolmanovsky"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Recoverable/safe sets for aircraft loss-of-control have been formally defined and published in a peer-reviewed journal.",
+   "stream": "C",
+   "p_flag_prescreen": "P2",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Crossref NO abstract, but title + the 2014 AIAA predecessor's nomenclature (safe set R_inf / recoverable set S) establish the concept. DOMAIN: large transport aircraft, linearized model, flight planning - NOT quadrotor, NOT impulsive jump, NOT actuator feasibility set."
+  },
+  {
+   "key": "10.2514/6.2014-0786",
+   "id_type": "DOI",
+   "id": "10.2514/6.2014-0786",
+   "source_title": "Recoverable sets of initial conditions and their use for aircraft flight planning after a loss of control event",
+   "source_venue": "AIAA Guidance, Navigation, and Control Conference",
+   "source_year": 2014,
+   "source_authors": [
+    "Kevin McDonough",
+    "Ilya Kolmanovsky",
+    "Ella M. Atkins"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "The recoverable-set concept originates in aircraft LOC literature (2014 AIAA conference predecessor).",
+   "stream": "C",
+   "p_flag_prescreen": "P2",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Nomenclature in prior_art_scan explicitly lists 'A safe set' and 'A recoverable set'. Conference predecessor of the 2017 JGCD paper."
+  },
+  {
+   "key": "10.1002/rnc.70606",
+   "id_type": "DOI",
+   "id": "10.1002/rnc.70606",
+   "source_title": "Control Systems Design With Enlarged Stability Domains for Nonlinear Constrained Systems via Sum‐of‐Squares Optimization",
+   "source_venue": "International Journal of Robust and Nonlinear Control",
+   "source_year": 2026,
+   "source_authors": [
+    "Bhaskar Biswas",
+    "Dmitry Ignatyev",
+    "Argyrios Zolotas",
+    "Antonios Tsourdos"
+   ],
+   "source_abstract": "ABSTRACT Designing safe control laws for nonlinear systems is challenging, especially when ensuring stability under actuator saturation and state constraints. A key aspect is embedding controllers with a Region of Attraction (ROA), which defines initial conditions guaranteeing convergence to a stable equilibrium point (EP). Controllers with enlarged ROAs are desirable for improved stability, performance, and robustness, but their design is a complex and computationally intensive task. This paper proposes a new methodology for designing controllers with expanded ROAs for nonlinear polynomial systems facing actuator saturation and state constraints, utilizing the Sum‐of‐Squares (SOS) optimization technique. Our approach proposes the use of multiple variable‐sized regions defined by multiple positive definite functions known as Shape Functions and the S‐procedure within the SOS optimization framework. This approach synthesizes a control law with enlarged ROA, even in the presence of constraints in the system. We developed a numerically efficient algorithm to solve this problem, yielding superior results. Extensive numerical simulations demonstrate the effectiveness of our approach. Additionally, we verified the estimated ROA under the designed control law using Monte Carlo simulations, confirming the robustness and practical applicability of our proposed method.",
+   "abstract_available": true,
+   "our_claim": "Region-of-attraction enlargement under actuator saturation with Monte-Carlo verification of the estimated ROA has been done via SOS.",
+   "stream": "C",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: SOS + shape functions, enlarged ROA for polynomial systems under saturation/state constraints, MC verification. This is a CONTROLLER-DEPENDENT SUFFICIENT region; ours is a CONTROLLER-INDEPENDENT NECESSARY non-recoverability bound - complementary, not competing."
+  },
+  {
+   "key": "2210.10868",
+   "id_type": "arXiv",
+   "id": "2210.10868",
+   "source_title": "Control Design under Actuator Saturation and Multi-Rate Sampling",
+   "source_venue": "arXiv preprint arXiv:2210.10868",
+   "source_year": 2022,
+   "source_authors": [
+    "Francesco Ferrante",
+    "Ricardo G. Sanfelice",
+    "Sophie Tarbouriech"
+   ],
+   "source_abstract": "The problem of designing a stabilizing feedback controller in the presence of saturating actuators and multi-rate (asynchronous) aperiodic state measurements is studied. Specifically, we consider a scenario in which measurements of the plant states are collected at the controller end in a sporadic and asynchronous fashion. A hybrid controller is used to perform a fusion of measurements sampled at different times. In between sampling events, the controller behaves as a copy of the plant and provides a feedback control signal based on the reconstruction of the plant state. The presence of saturation at the plant input limits the value of the components of this signal to a bounded range. When a new measurement is available, the controller state undergoes an instantaneous jump. The resulting system is augmented with a set of timers triggering the arrival of new measurements and analyzed in a hybrid systems framework. Relying on Lyapunov tools for hybrid systems and techniques for control design under saturation, we propose sufficient conditions in the form of matrix inequalities to ensure regional exponential stability of a closed-set containing the origin of the plant, i.e., exponential stability with a guaranteed region of attraction. Specifically, explicit estimates of the basin of attraction are provided in the form of ellipsoidal sets. Leveraging those conditions, a design procedure based on semidefinite programming is proposed to design a stabilizing controller with maximized size of the basin attraction. The effectiveness of the proposed methodology is shown in an example.",
+   "abstract_available": true,
+   "our_claim": "Explicit ellipsoidal basin-of-attraction estimates under input saturation exist in a hybrid-systems framework.",
+   "stream": "C",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: hybrid controller, regional exponential stability, explicit ellipsoidal basin estimates, SDP design. The state JUMP here is the controller state at measurement arrival, NOT an exogenous impact jump."
+  },
+  {
+   "key": "10.1016/j.nahs.2023.101335",
+   "id_type": "DOI",
+   "id": "10.1016/j.nahs.2023.101335",
+   "source_title": "Exponential stabilization of nonlinear systems under saturated control involving impulse correction",
+   "source_venue": "Nonlinear Analysis: Hybrid Systems",
+   "source_year": 2023,
+   "source_authors": [
+    "Miaomiao Yu",
+    "Shuchen Wu",
+    "Xiaodi Li"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Exponential stabilization of nonlinear systems under saturated control WITH impulse correction has been published (NAHS 2023).",
+   "stream": "D",
+   "p_flag_prescreen": "P1",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "CRITICAL DISTINCTION: 'impulse correction' is an impulsive CONTROL input used to stabilize, NOT an exogenous disturbance causing a state jump. Writing 'post-impulse recovery studied' would be P1 mischaracterisation. Correct gap: they design impulsive control; we bound recovery after an exogenous angular impulse."
+  },
+  {
+   "key": "10.2139/ssrn.7536970",
+   "id_type": "DOI",
+   "id": "10.2139/ssrn.7536970",
+   "source_title": "Finite-time stabilization of nonlinear systems: Saturated control involving finite impulsive regulation",
+   "source_venue": "",
+   "source_year": 2026,
+   "source_authors": [
+    "Jing Gao",
+    "Cuiping Lu",
+    "Xiaodi Li"
+   ],
+   "source_abstract": "This paper studies the problem of finite-time stabilization (FTS) for nonlinear dynamical systems via saturated control involving finite impulsive regulation, where the effect of saturation structure on both continuous state feedback control and impulsive regulation is comprehensively considered. Based on this, some sufficient conditions are proposed to ensure FTS property of the considered system. An elastic relationship between system dynamics and saturation structure is established in this paper, thereby determining the total number of impulsive regulation. In addition, the maximum estimation of the attraction domain is obtained by an optimization problem and the proposed results are then employed in the robustness analysis of nonlinear systems. Finally, the validity and advantages of this paper are demonstrated through two numerical examples.",
+   "abstract_available": true,
+   "our_claim": "A 2026 preprint studies finite-time stabilization via saturated control with finite impulsive regulation AND maximizes the estimated attraction domain.",
+   "stream": "D",
+   "p_flag_prescreen": "P1",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "posted-content (SSRN preprint, NOT peer-reviewed); abstract confirms FTS + saturation + finite impulsive regulation + 'maximum estimation of the attraction domain'. Same Xiaodi Li group as NAHS 2023. Closest neighbour; must be cited as a preprint and distinguished (impulsive regulation vs exogenous jump; sufficient DOA vs controller-independent necessary bound)."
+  },
+  {
+   "key": "2303.10243",
+   "id_type": "arXiv",
+   "id": "2303.10243",
+   "source_title": "Safety-Critical Control for Systems with Impulsive Actuators and Dwell Time Constraints",
+   "source_venue": "arXiv preprint arXiv:2303.10243",
+   "source_year": 2023,
+   "source_authors": [
+    "Joseph Breeden",
+    "Dimitra Panagou"
+   ],
+   "source_abstract": "This paper presents extensions of control barrier function (CBF) and control Lyapunov function (CLF) theory to systems wherein all actuators cause impulsive changes to the state trajectory, and can only be used again after a minimum dwell time has elapsed. These rules define a hybrid system, wherein the controller must at each control cycle choose whether to remain on the current state flow or to jump to a new trajectory. We first derive a sufficient condition to render a specified set forward invariant using extensions of CBF theory. We then derive related conditions to ensure asymptotic stability in such systems, and apply both conditions online in an optimization-based control law with aperiodic impulses. We simulate both results on a spacecraft docking problem with multiple obstacles.",
+   "abstract_available": true,
+   "our_claim": "CBF/CLF theory has been extended to systems with impulsive actuators and dwell-time constraints, with forward-invariance conditions.",
+   "stream": "D",
+   "p_flag_prescreen": "P2",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: impulsive ACTUATORS (control-side jumps), spacecraft docking simulation. Domain is spacecraft, not quadrotor attitude recovery."
+  },
+  {
+   "key": "10.1371/journal.pone.0360921",
+   "id_type": "DOI",
+   "id": "10.1371/journal.pone.0360921",
+   "source_title": "Residual-activated smooth sliding-mode control for actuator-limited quadrotor UAV attitude–altitude tracking",
+   "source_venue": "PLOS One",
+   "source_year": 2026,
+   "source_authors": [
+    "Thanh-Lam Le",
+    "Min-Fu Hsieh"
+   ],
+   "source_abstract": "Residual tracking errors may persist in actuator-limited quadrotors after the main transient has decayed, particularly when motor lag, dead-zone behavior, thrust saturation, rotor drag, and partial motor-effectiveness loss weaken corrective action near the sliding surface. This study develops a friction-mode residual reaching law (FRMRL) for robust attitude–altitude control of a quadrotor UAV. The law retains the smoothness of a bounded sliding-mode reaching function and adds a residual-activated term that becomes effective when the sliding variable remains nonzero while the corresponding angular or vertical rate is small. It therefore strengthens the reaching action in the low-rate residual regime without increasing switching authority across the full operating range. The controller is formulated for a cascaded quadrotor architecture in which the directly actuated attitude–altitude channels are modeled as matched-input second-order subsystems subject to lumped perturbations and actuator nonlinearities. Lyapunov analysis establishes uniform ultimate boundedness under bounded perturbations and asymptotic convergence in the nominal case; it also shows a stronger local descent rate than the smooth reaching baseline in the residual regime. FRMRL is evaluated against PID, constant-rate SMC, exponential-reaching-law SMC, adaptive SMC, and a gain-matched smooth-reaching-law ablation baseline across six scenarios: nominal tracking, matched disturbances, wind-like disturbances, parameter uncertainty, actuator saturation with dead-zone, and partial motor-effectiveness loss. FRMRL achieves the lowest study-specific journal-oriented quality score in all six scenarios. Its mean score is 13.2%, 19.7%, 49.9%, and 78.4% lower than the corresponding mean scores for ERL-SMC, ASMC, CRL-SMC, and PID, respectively. Across the six scenarios, FRMRL also yields a mean total IAE of 15.5468 and a mean peak-to-peak control ripple of 0.3783. The gain-matched ablation indicates that residual activation, rather than differences in baseline gains, accounts for the improvement in residual-error suppression and control smoothness.",
+   "abstract_available": true,
+   "our_claim": "Actuator non-idealities (motor lag, dead-zone, thrust saturation, partial motor-effectiveness loss) are modeled with UUB guarantees and a gain-matched ablation.",
+   "stream": "E",
+   "p_flag_prescreen": "P3",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract explicitly lists motor lag/dead-zone/saturation/rotor drag/loss; UUB + asymptotic nominal; PID/SMC/ASMC/ablation baselines. Problem is attitude-altitude TRACKING, not post-impulse recovery; no controller-independent bound."
+  },
+  {
+   "key": "2404.07837",
+   "id_type": "arXiv",
+   "id": "2404.07837",
+   "source_title": "Data-Driven System Identification of Quadrotors Subject to Motor Delays",
+   "source_venue": "arXiv preprint arXiv:2404.07837",
+   "source_year": 2024,
+   "source_authors": [
+    "Jonas Eschmann",
+    "Dario Albani",
+    "Giuseppe Loianno"
+   ],
+   "source_abstract": "Recently non-linear control methods like Model Predictive Control (MPC) and Reinforcement Learning (RL) have attracted increased interest in the quadrotor control community. In contrast to classic control methods like cascaded PID controllers, MPC and RL heavily rely on an accurate model of the system dynamics. The process of quadrotor system identification is notoriously tedious and is often pursued with additional equipment like a thrust stand. Furthermore, low-level details like motor delays which are crucial for accurate end-to-end control are often neglected. In this work, we introduce a data-driven method to identify a quadrotor's inertia parameters, thrust curves, torque coefficients, and first-order motor delay purely based on proprioceptive data. The estimation of the motor delay is particularly challenging as usually, the RPMs can not be measured. We derive a Maximum A Posteriori (MAP)-based method to estimate the latent time constant. Our approach only requires about a minute of flying data that can be collected without any additional equipment and usually consists of three simple maneuvers. Experimental results demonstrate the ability of our method to accurately recover the parameters of multiple quadrotors. It also facilitates the deployment of RL-based, end-to-end quadrotor control of a large quadrotor under harsh, outdoor conditions.",
+   "abstract_available": true,
+   "our_claim": "[9] First-order motor delay, inertia, thrust curve and torque coefficients are identifiable from proprioceptive flight data (MAP).",
+   "stream": "P",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: MAP-based identification of inertia, thrust curves, torque coefficients and first-order motor delay; ~1 min of flight data. Source of T_m=0.072s and K_tau."
+  },
+  {
+   "key": "1508.04886",
+   "id_type": "arXiv",
+   "id": "1508.04886",
+   "source_title": "Development of a Low-Cost Experimental Quadcopter Testbed Using an Arduino Controller and Software",
+   "source_venue": "arXiv preprint arXiv:1508.04886",
+   "source_year": 2015,
+   "source_authors": [
+    "Ankyda Ji",
+    "Kamran Turkoglu"
+   ],
+   "source_abstract": "This paper explains the integration process of an autonomous quadcopter platform and the design of Arduino based novel software architecture that enables the execution of advanced control laws on low-cost off-the-shelf products based frameworks. Here, quadcopter dynamics are explored through the classical nonlinear equations of motion. Next, quadcopter is designed, built and assembled using off-the-shelf, low-cost products to carry a camera payload which is mainly utilized for any type of surveillance missions. System identification of the quadcopter dynamics is accomplished through the use of sweep data and $CIFER^{\\circledR}$ to obtain the dynamic model. The unstable, non-linear quadcopter dynamics are stabilized using a generic control algorithm through the novel Arduino based software architecture. Experimental results demonstrate the validation of the integration and the novel software package running on an Arduino board to control autonomous quadcopter flights.",
+   "abstract_available": true,
+   "our_claim": "[10] A low-cost quadcopter testbed with CIFER system identification supplies m, inertia and thrust/torque coefficients.",
+   "stream": "P",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: Arduino testbed, sweep data + CIFER ID. Rejected l=8.25 meters as unit error in earlier round."
+  },
+  {
+   "key": "10.1002/acs.3484",
+   "id_type": "DOI",
+   "id": "10.1002/acs.3484",
+   "source_title": "Adaptive finite‐time attitude tracking control of quadrotor under actuator faults and external disturbances with guaranteed performance",
+   "source_venue": "International Journal of Adaptive Control and Signal Processing",
+   "source_year": 2022,
+   "source_authors": [
+    "Gang Xu",
+    "Yuanqing Xia",
+    "Di‐Hua Zhai",
+    "Weizhi Lyu"
+   ],
+   "source_abstract": "Summary The problem of attitude tracking control for quadrotor in presence of actuator faults and external disturbances is investigated in this article. By using fast terminal sliding mode control combined with prescribed performance technique, an adaptive control strategy capable of accommodating actuator faults and suppressing external disturbances is designed to achieve attitude finite‐time tracking control with guaranteed performance. In particular, with the help of Nussbaum functions, actuator faults are passively handled without extra development of fault detection and diagnosis mechanism. The finite‐time stability of attitude system under actuator faults and external disturbances is analyzed by Lyapunov stability criterion. Moreover, in order to demonstrate the effectiveness and superiority of proposed control scheme, numerical simulations in different cases are performed and presented in simulation section.",
+   "abstract_available": true,
+   "our_claim": "Adaptive finite-time attitude tracking under actuator faults and external disturbances with prescribed performance has been studied (2022).",
+   "stream": "A",
+   "p_flag_prescreen": "P9",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: fast terminal SMC + prescribed performance + Nussbaum for passive fault handling; Lyapunov finite-time stability; numerical simulations. NOTE: abstract mentions NO input saturation - do not attribute anti-saturation to this paper."
+  },
+  {
+   "key": "10.1109/TCSII.2020.3045769",
+   "id_type": "DOI",
+   "id": "10.1109/TCSII.2020.3045769",
+   "source_title": "Antisaturation Finite-Time Attitude Tracking Control Based Observer for a Quadrotor",
+   "source_venue": "IEEE Transactions on Circuits and Systems II: Express Briefs",
+   "source_year": 2021,
+   "source_authors": [
+    "Kang Liu",
+    "Xingxian Wang",
+    "Rujing Wang",
+    "Guowei Sun",
+    "Xiaodong Wang"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "An anti-saturation finite-time attitude tracking observer for a quadrotor exists (2021).",
+   "stream": "A",
+   "p_flag_prescreen": "P9",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Crossref NO abstract; title supports anti-saturation + finite-time + observer. Published 2021 (NOT 2020 as ChatGPT draft claimed); vol 68(6) 2047-2051."
+  },
+  {
+   "key": "10.1002/rnc.6001",
+   "id_type": "DOI",
+   "id": "10.1002/rnc.6001",
+   "source_title": "Fault‐tolerant attitude tracking control with practical finite time convergence for unmanned aerial vehicles under actuation faults",
+   "source_venue": "International Journal of Robust and Nonlinear Control",
+   "source_year": 2022,
+   "source_authors": [
+    "Wei Yu",
+    "Jun Yan",
+    "Xiaohu Pan",
+    "Shilei Tan",
+    "Hongwei Cao",
+    "Yongduan Song"
+   ],
+   "source_abstract": "Abstract This paper presents an adaptive attitude finite time tracking control algorithm for quadrotor unmanned aerial vehicle (UAV) in presence of actuator faults, input saturation and external disturbance. The dynamic model of the quadrotor UAV is characterized with quaternion representation. Subsequently, using nonsingular terminal sliding mode surface, an adaptive fault‐tolerant finite‐time attitude control scheme is proposed. Using Lyapunov stability analysis, it is shown that the proposed method is able to achieve practical finite time attitude tracking convergence in that the attitude tracking error converges to a small residual set within finite time and all signals of the closed‐loop system remain bounded. The effectiveness of the proposed method is confirmed via numerical simulation.",
+   "abstract_available": true,
+   "our_claim": "Adaptive fault-tolerant attitude control achieves PRACTICAL finite-time convergence (error to a residual set) under faults, input saturation and disturbances.",
+   "stream": "A",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: quaternion model, nonsingular terminal SMC, 'practical finite time ... converges to a small residual set' = UUB-type, NOT strict finite-time. Useful contrast for our theorem downgrade (memory: hard-flaw E)."
+  },
+  {
+   "key": "1907.11673",
+   "id_type": "arXiv",
+   "id": "1907.11673",
+   "source_title": "A characterization of strong iISS for time-varying impulsive systems",
+   "source_venue": "arXiv preprint arXiv:1907.11673",
+   "source_year": 2019,
+   "source_authors": [
+    "Hernan Haimovich",
+    "Jose L. Mancilla-Aguilar",
+    "Paula Cardone"
+   ],
+   "source_abstract": "For general time-varying or switched (nonlinear) systems, converse Lyapunov theorems for stability are not available. In these cases, the integral input-to-state stability (iISS) property is not equivalent to the existence of an iISS-Lyapunov function but can still be characterized as the combination of global uniform asymptotic stability under zero input (0-GUAS) and uniformly bounded energy input-bounded state (UBEBS). For impulsive systems, asymptotic stability can be weak (when the asymptotic decay depends only on elapsed time) or strong (when such a decay depends also on the number of impulses that occurred). This paper shows that the mentioned characterization of iISS remains valid for time-varying impulsive systems, provided that stability is understood in the strong sense.",
+   "abstract_available": true,
+   "our_claim": "Strong iISS characterisation for time-varying impulsive systems is established Lyapunov/converse theory.",
+   "stream": "D",
+   "p_flag_prescreen": "P8",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: iISS = 0-GUAS + UBEBS remains valid for time-varying impulsive systems in the strong sense. Evidence that impulsive/hybrid stability theory is mature -> our 'hybrid modelling' is NOT itself novel."
+  },
+  {
+   "key": "2603.18450",
+   "id_type": "arXiv",
+   "id": "2603.18450",
+   "source_title": "Generalizations of Backup Control Barrier Functions: Expansion and Adaptation for Input-Bounded Safety-Critical Control",
+   "source_venue": "arXiv preprint arXiv:2603.18450",
+   "source_year": 2026,
+   "source_authors": [
+    "David E. J. van Wijk",
+    "Dohyun Lee",
+    "Ersin Das",
+    "Tamas G. Molnar",
+    "Aaron D. Ames",
+    "Joel W. Burdick"
+   ],
+   "source_abstract": "Guaranteeing the safety of nonlinear systems with bounded inputs remains a key challenge in safe autonomy. Backup control barrier functions (bCBFs) provide a powerful mechanism for constructing controlled invariant sets by propagating trajectories under a pre-verified backup controller to a forward invariant backup set. While effective, the standard bCBF method utilizes the same backup controller for both set expansion and safety certification, which can restrict the expanded safe set and lead to conservative dynamic behavior. In this study, we generalize the bCBF framework by separating the set-expanding controller from the verified backup controller, thereby enabling a broader class of expansion strategies while preserving formal safety guarantees. We establish sufficient conditions for forward invariance of the resulting implicit safe set and show how the generalized construction recovers existing bCBF methods as special cases. Moreover, we extend the proposed framework to parameterized controller families, enabling online adaptation of the expansion controller while maintaining safety guarantees in the presence of input bounds.",
+   "abstract_available": true,
+   "our_claim": "Generalized backup CBFs construct controlled-invariant safe sets under input bounds with formal forward-invariance guarantees.",
+   "stream": "D",
+   "p_flag_prescreen": "P5",
+   "manual_verdict": "SUPPORTED",
+   "verdict_rationale": "Abstract: separates set-expanding vs backup controller, forward invariance, online adaptation with input bounds. Controlled-invariant (sufficient) set, not a controller-independent non-recoverability bound."
+  },
+  {
+   "key": "10.2514/6.2013-5172",
+   "id_type": "DOI",
+   "id": "10.2514/6.2013-5172",
+   "source_title": "A Multi-Mode Upset Recovery Flight Control System for Large Transport Aircraft",
+   "source_venue": "AIAA Guidance, Navigation, and Control (GNC) Conference",
+   "source_year": 2013,
+   "source_authors": [
+    "Jacobus A. Engelbrecht",
+    "Simon J. Pauck",
+    "Iain K. Peddle"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Multi-mode upset recovery flight control (state machine reducing angular rates, restoring envelope) predates quadrotor recovery work.",
+   "stream": "C",
+   "p_flag_prescreen": "P2",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Crossref NO abstract; prior_art_scan publisher fragment confirms state-machine upset recovery for LARGE TRANSPORT AIRCRAFT. Domain differs from quadrotor."
+  },
+  {
+   "key": "10.2514/6.2012-2429",
+   "id_type": "DOI",
+   "id": "10.2514/6.2012-2429",
+   "source_title": "Aircraft Stall Recovery Using Nonlinear Smooth Regulators with States and Control Constraints",
+   "source_venue": "Infotech@Aerospace 2012",
+   "source_year": 2012,
+   "source_authors": [
+    "Jean-Etienne Dongmo"
+   ],
+   "source_abstract": null,
+   "abstract_available": false,
+   "our_claim": "Aircraft stall recovery with explicit STATE and CONTROL constraints has been studied with nonlinear smooth regulators.",
+   "stream": "C",
+   "p_flag_prescreen": "P2",
+   "manual_verdict": "SUPPORTED_NUANCE",
+   "verdict_rationale": "Crossref NO abstract; prior_art_scan fragment confirms constrained stall recovery. Fixed-wing LOC domain, not quadrotor impulsive jump."
+  }
+ ]
+}

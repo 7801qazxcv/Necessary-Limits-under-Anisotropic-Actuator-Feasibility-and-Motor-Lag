@@ -1,0 +1,465 @@
+{
+ "status": "DONE",
+ "checks": {
+  "P2_first_passage": {
+   "Phi_rad": 1.0471975511965976,
+   "pi": 3.141592653589793,
+   "Phi_lt_pi": true,
+   "n_rows": 20,
+   "all_cross_before_tstar": true,
+   "all_wrap_impossible": true,
+   "all_omega_positive": false,
+   "max_t_cross": 0.6535284851462961,
+   "verdict": "wrap cannot mask the violation: Phi=pi/3 < pi, and theta first reaches Phi before t*; phi=theta on [0,t_e]",
+   "rows": [
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.02,
+     "t_star": 0.15401344332798578,
+     "t_first_cross": 0.15401344225335956,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.05,
+     "t_star": 0.16499084072710185,
+     "t_first_cross": 0.16499083823004607,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.1,
+     "t_star": 0.18503678365953002,
+     "t_first_cross": 0.18503678305556615,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.02,
+     "t_star": 0.15401344332798578,
+     "t_first_cross": 0.15401344225335956,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.05,
+     "t_star": 0.16499084072710185,
+     "t_first_cross": 0.16499083823004607,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.1,
+     "t_star": 0.18503678365953002,
+     "t_first_cross": 0.18503678305556615,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.02,
+     "t_star": 0.6350255475508262,
+     "t_first_cross": 0.6350255342535278,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.05,
+     "t_star": 0.6391656649172741,
+     "t_first_cross": 0.6391656598923598,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.1,
+     "t_star": 0.6535284900178531,
+     "t_first_cross": 0.6535284851462961,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.02,
+     "t_star": 0.17537398390014236,
+     "t_first_cross": 0.17537398389374065,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.05,
+     "t_star": 0.18569351199743306,
+     "t_first_cross": 0.18569351199743306,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": false,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.1,
+     "t_star": 0.20609476789764913,
+     "t_first_cross": 0.20609476789760212,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "roll",
+     "Tm": 0.055455,
+     "t_star": 0.07434413072313797,
+     "t_first_cross": 0.07434413003075219,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "roll",
+     "Tm": 0.249394,
+     "t_star": 0.11458435090094532,
+     "t_first_cross": 0.11458435023556587,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "pitch",
+     "Tm": 0.055455,
+     "t_star": 0.07738599401440735,
+     "t_first_cross": 0.07738599382394598,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "pitch",
+     "Tm": 0.249394,
+     "t_star": 0.11873131147731411,
+     "t_first_cross": 0.11873131056853534,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "yaw",
+     "Tm": 0.055455,
+     "t_star": 0.22197526717069743,
+     "t_first_cross": 0.22197526376801985,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "yaw",
+     "Tm": 0.249394,
+     "t_star": 0.3137252009664756,
+     "t_first_cross": 0.3137251980444311,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "combo",
+     "Tm": 0.055455,
+     "t_star": 0.09911422868811653,
+     "t_first_cross": 0.09911422850350138,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    },
+    {
+     "platform": "identified",
+     "dir": "combo",
+     "Tm": 0.249394,
+     "t_star": 0.14946420565767204,
+     "t_first_cross": 0.14946420161864182,
+     "t_cross_lt_tstar": true,
+     "Phi_lt_pi": true,
+     "wrap_impossible_before_cross": true,
+     "omega_lower_positive_on_0_te": true,
+     "theta_at_tstar_upper_bound_needed": "theta(t*)=g(t*)+ slack; g(t*)=Phi at dw*"
+    }
+   ]
+  },
+  "P5_root_uniqueness": {
+   "all_monotone": true,
+   "all_Aprime_single_sign_change": true,
+   "all_existence": true,
+   "verdict": "phi_min strictly increasing in dw and A' has at most one sign change => t* unique and critical root unique; numerical bisection is well-posed",
+   "rows": [
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.02,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.05,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "roll",
+     "Tm": 0.1,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.02,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.05,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "pitch",
+     "Tm": 0.1,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.02,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.05,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 1,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "yaw",
+     "Tm": 0.1,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 1,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.02,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.05,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "synthetic",
+     "dir": "combo",
+     "Tm": 0.1,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "roll",
+     "Tm": 0.055455,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "roll",
+     "Tm": 0.249394,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "pitch",
+     "Tm": 0.055455,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "pitch",
+     "Tm": 0.249394,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "yaw",
+     "Tm": 0.055455,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 1,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "yaw",
+     "Tm": 0.249394,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 1,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "combo",
+     "Tm": 0.055455,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 0,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    },
+    {
+     "platform": "identified",
+     "dir": "combo",
+     "Tm": 0.249394,
+     "phi_min_monotone": true,
+     "Aprime_sign_changes": 1,
+     "Aprime_eventually_positive": true,
+     "existence_condition": true
+    }
+   ]
+  },
+  "P8_independence": {
+   "L_suff_calls_L_nec": false,
+   "L_suff_calls_phi_peak_min": false,
+   "L_suff_calls_A_of_t": false,
+   "L_suff_uses_simulate": true,
+   "L_suff_source": "def L_suff(n, Tm, family, Kp, Kd, W_mech, dt=DT, d_mode=\"turb\"):\n    _, _, ok, bad, cost = simulate(DW_GRID, n, Tm, family, Kp, Kd, W_mech, dt, d_mode)\n    if bad:\n        return {\"L_suff\": float(\"nan\"), \"dw_max\": float(\"nan\"), \"bad\": True,\n                \"degenerate\": True, \"cost\": cost, \"ok_pattern\": None}\n    good = np.where(ok)[0]\n    first_false = None\n    for i,o in enumerate(ok):\n        if not o: first_false = i; break\n    # islands: any True AFTER the first False -> recovery domain is NOT monotone,\n    # L_suff undefined. Mark degenerate, exclude from statistics; do NOT delete.\n    i",
+   "verdict": "L_suff is obtained by a full 6-DoF RK4 boundary search (simulate over DW_GRID) and does NOT call the analytic L_nec module -> the V1 check compares an independent numerical boundary against the analytic bound"
+  },
+  "P13_arm_conditions": {
+   "d_mode_branch": [
+    "def rhs(X, t, family, Kp, Kd, W_mech, Tm, d_mode=\"turb\", n_dir=None):",
+    "if d_mode == \"adv\":",
+    "dvec = np.tile(D_BAR*n_dir, (X.shape[0], 1))",
+    "dvec = d_at(t)[None, :]"
+   ],
+   "shared_dt": true,
+   "same_T_HOR": true,
+   "verdict": "rhs differs ONLY in dvec (turb: d_at(t); adv: D_BAR*n_dir). dt, T_HOR, initial state, controller, actuator model and recovery criterion are shared through the same simulate() call."
+  }
+ }
+}

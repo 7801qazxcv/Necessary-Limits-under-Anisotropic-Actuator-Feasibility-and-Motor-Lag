@@ -1,0 +1,468 @@
+{
+ "checks": {
+  "C0_draft_uncleaned_selfnotes": {
+   "hits": [],
+   "pass": true
+  },
+  "C2_disturbance_sign_verdict": {
+   "rows": {
+    "roll|0.02": {
+     "L_star_adversarial": 0.15869,
+     "L_star_any_disturbance": 0.16356,
+     "v2_L_nec": 0.15869,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0306
+    },
+    "roll|0.05": {
+     "L_star_adversarial": 0.13736,
+     "L_star_any_disturbance": 0.14257,
+     "v2_L_nec": 0.13736,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0379
+    },
+    "roll|0.1": {
+     "L_star_adversarial": 0.11709,
+     "L_star_any_disturbance": 0.12292,
+     "v2_L_nec": 0.11709,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0498
+    },
+    "pitch|0.02": {
+     "L_star_adversarial": 0.15869,
+     "L_star_any_disturbance": 0.16356,
+     "v2_L_nec": 0.15869,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0306
+    },
+    "pitch|0.05": {
+     "L_star_adversarial": 0.13736,
+     "L_star_any_disturbance": 0.14257,
+     "v2_L_nec": 0.13736,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0379
+    },
+    "pitch|0.1": {
+     "L_star_adversarial": 0.11709,
+     "L_star_any_disturbance": 0.12292,
+     "v2_L_nec": 0.11709,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0498
+    },
+    "yaw|0.02": {
+     "L_star_adversarial": 0.07621,
+     "L_star_any_disturbance": 0.09444,
+     "v2_L_nec": 0.07621,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.2392
+    },
+    "yaw|0.05": {
+     "L_star_adversarial": 0.07202,
+     "L_star_any_disturbance": 0.09037,
+     "v2_L_nec": 0.07202,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.2547
+    },
+    "yaw|0.1": {
+     "L_star_adversarial": 0.06599,
+     "L_star_any_disturbance": 0.08475,
+     "v2_L_nec": 0.06599,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.2842
+    },
+    "combo|0.02": {
+     "L_star_adversarial": 0.18054,
+     "L_star_any_disturbance": 0.18608,
+     "v2_L_nec": 0.18054,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0307
+    },
+    "combo|0.05": {
+     "L_star_adversarial": 0.15809,
+     "L_star_any_disturbance": 0.16395,
+     "v2_L_nec": 0.15809,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0371
+    },
+    "combo|0.1": {
+     "L_star_adversarial": 0.13577,
+     "L_star_any_disturbance": 0.14226,
+     "v2_L_nec": 0.13577,
+     "v2_matches_adversarial": true,
+     "any_over_adv_ratio": 1.0478
+    }
+   },
+   "v2_uses_adversarial": true,
+   "pass": true,
+   "verdict": "v2 解析界 = 对抗扰动(n·d=+dbar)下的界；Theorem 1 陈述必须限定为'在最坏对抗扰动实现下'，不得写'对任意扰动'。若要覆盖任意扰动，须改用 +dbar 的 L_star_any_disturbance（更大/更保守）并重算全部数值。"
+  },
+  "C3_existence_condition": {
+   "rows": {
+    "roll": {
+     "tau_max_n": 1.22086,
+     "dbar": 0.032,
+     "condition_holds": true
+    },
+    "pitch": {
+     "tau_max_n": 1.22086,
+     "dbar": 0.032,
+     "condition_holds": true
+    },
+    "yaw": {
+     "tau_max_n": 0.15696,
+     "dbar": 0.032,
+     "condition_holds": true
+    },
+    "combo": {
+     "tau_max_n": 1.19807,
+     "dbar": 0.032,
+     "condition_holds": true
+    }
+   },
+   "pass": true,
+   "note": "τmax,n>dbar 是 A 最终单调、t* 存在、界非 vacuous 的前提；逐方向核验"
+  },
+  "C4b_rhs_equivalence_probe": {
+   "pass": true,
+   "max_abs_diff": 0.0
+  },
+  "C4_lemma1_trajectory": {
+   "rows": {
+    "roll": {
+     "violations": 0,
+     "n_steps": 3000,
+     "max_excess": 0.0,
+     "uc_feasible_violations": 0,
+     "max_sum_u_error": 0.0,
+     "samples": [
+      {
+       "t": 0.0,
+       "lhs": 0.0,
+       "rhs": 0.0,
+       "excess": 0.0
+      },
+      {
+       "t": 0.005,
+       "lhs": 0.11618,
+       "rhs": 0.11618,
+       "excess": -0.0
+      },
+      {
+       "t": 0.025,
+       "lhs": 0.48037,
+       "rhs": 0.48037,
+       "excess": 0.0
+      },
+      {
+       "t": 0.05,
+       "lhs": 0.77173,
+       "rhs": 0.77173,
+       "excess": 0.0
+      },
+      {
+       "t": 0.1,
+       "lhs": 0.31146,
+       "rhs": 1.05564,
+       "excess": -0.744172
+      },
+      {
+       "t": 0.2,
+       "lhs": 0.06802,
+       "rhs": 1.1985,
+       "excess": -1.130482
+      }
+     ]
+    },
+    "pitch": {
+     "violations": 0,
+     "n_steps": 3000,
+     "max_excess": 0.0,
+     "uc_feasible_violations": 0,
+     "max_sum_u_error": 0.0,
+     "samples": [
+      {
+       "t": 0.0,
+       "lhs": 0.0,
+       "rhs": 0.0,
+       "excess": 0.0
+      },
+      {
+       "t": 0.005,
+       "lhs": 0.11618,
+       "rhs": 0.11618,
+       "excess": -0.0
+      },
+      {
+       "t": 0.025,
+       "lhs": 0.48037,
+       "rhs": 0.48037,
+       "excess": 0.0
+      },
+      {
+       "t": 0.05,
+       "lhs": 0.77173,
+       "rhs": 0.77173,
+       "excess": 0.0
+      },
+      {
+       "t": 0.1,
+       "lhs": 0.31146,
+       "rhs": 1.05564,
+       "excess": -0.744172
+      },
+      {
+       "t": 0.2,
+       "lhs": 0.06802,
+       "rhs": 1.1985,
+       "excess": -1.130482
+      }
+     ]
+    },
+    "yaw": {
+     "violations": 0,
+     "n_steps": 3000,
+     "max_excess": 0.0,
+     "uc_feasible_violations": 0,
+     "max_sum_u_error": 0.0,
+     "samples": [
+      {
+       "t": 0.0,
+       "lhs": 0.0,
+       "rhs": 0.0,
+       "excess": 0.0
+      },
+      {
+       "t": 0.005,
+       "lhs": 0.01494,
+       "rhs": 0.01494,
+       "excess": -0.0
+      },
+      {
+       "t": 0.025,
+       "lhs": 0.06176,
+       "rhs": 0.06176,
+       "excess": 0.0
+      },
+      {
+       "t": 0.05,
+       "lhs": 0.09922,
+       "rhs": 0.09922,
+       "excess": 0.0
+      },
+      {
+       "t": 0.1,
+       "lhs": 0.13572,
+       "rhs": 0.13572,
+       "excess": 0.0
+      },
+      {
+       "t": 0.2,
+       "lhs": 0.15409,
+       "rhs": 0.15409,
+       "excess": 0.0
+      }
+     ]
+    },
+    "combo": {
+     "violations": 0,
+     "n_steps": 3000,
+     "max_excess": 0.0,
+     "uc_feasible_violations": 0,
+     "max_sum_u_error": 0.0,
+     "samples": [
+      {
+       "t": 0.0,
+       "lhs": 0.0,
+       "rhs": 0.0,
+       "excess": 0.0
+      },
+      {
+       "t": 0.005,
+       "lhs": 0.00862,
+       "rhs": 0.11401,
+       "excess": -0.105387
+      },
+      {
+       "t": 0.025,
+       "lhs": 0.03566,
+       "rhs": 0.4714,
+       "excess": -0.435746
+      },
+      {
+       "t": 0.05,
+       "lhs": 0.05728,
+       "rhs": 0.75732,
+       "excess": -0.700039
+      },
+      {
+       "t": 0.1,
+       "lhs": 0.07836,
+       "rhs": 1.03593,
+       "excess": -0.957569
+      },
+      {
+       "t": 0.2,
+       "lhs": 0.08896,
+       "rhs": 1.17612,
+       "excess": -1.087162
+      }
+     ]
+    }
+   },
+   "pass": true,
+   "note": "Lemma 1 逐点式在真实闭环轨迹上验证；同时记录 u_c 是否严格 ∈ U"
+  },
+  "C5_P10_independent_recompute": {
+   "rows": {
+    "roll|0.05": {
+     "phi_min_analytic": 0.13789,
+     "phi_min_ode_independent": 0.1379,
+     "abs_diff": 1e-05,
+     "rel_diff": 7e-05
+    },
+    "pitch|0.05": {
+     "phi_min_analytic": 0.13789,
+     "phi_min_ode_independent": 0.1379,
+     "abs_diff": 1e-05,
+     "rel_diff": 7e-05
+    },
+    "yaw|0.05": {
+     "phi_min_analytic": 1.04661,
+     "phi_min_ode_independent": 1.04665,
+     "abs_diff": 4e-05,
+     "rel_diff": 4e-05
+    },
+    "combo|0.05": {
+     "phi_min_analytic": 0.16088,
+     "phi_min_ode_independent": 0.16089,
+     "abs_diff": 1e-05,
+     "rel_diff": 5e-05
+    }
+   },
+   "pass": true,
+   "note": "P10：用直接 ODE 积分（非解析 φ_min 公式）独立复算，验证 ω_n≥Δω−A(t) 链条"
+  },
+  "C6_13b_reverse_solve": {
+   "rows": {
+    "roll": {
+     "claimed_L_nec": 0.13736,
+     "dw_star_reversed": 10.56617,
+     "phi_min_at_dw_star": 1.0472,
+     "Phi_max": 1.0472,
+     "self_consistent": true,
+     "tau_max_n_LP": 1.22086,
+     "dbar": 0.032,
+     "feasible_tm_gt_dbar": true
+    },
+    "pitch": {
+     "claimed_L_nec": 0.13736,
+     "dw_star_reversed": 10.56617,
+     "phi_min_at_dw_star": 1.0472,
+     "Phi_max": 1.0472,
+     "self_consistent": true,
+     "tau_max_n_LP": 1.22086,
+     "dbar": 0.032,
+     "feasible_tm_gt_dbar": true
+    },
+    "yaw": {
+     "claimed_L_nec": 0.07202,
+     "dw_star_reversed": 3.00092,
+     "phi_min_at_dw_star": 1.0472,
+     "Phi_max": 1.0472,
+     "self_consistent": true,
+     "tau_max_n_LP": 0.15696,
+     "dbar": 0.032,
+     "feasible_tm_gt_dbar": true
+    },
+    "combo": {
+     "claimed_L_nec": 0.15809,
+     "dw_star_reversed": 9.4853,
+     "phi_min_at_dw_star": 1.0472,
+     "Phi_max": 1.0472,
+     "self_consistent": true,
+     "tau_max_n_LP": 1.19807,
+     "dbar": 0.032,
+     "feasible_tm_gt_dbar": true
+    }
+   },
+   "pass": true,
+   "note": "从稿子声称的 L_nec 反解 Δω*，代回 φ_min 必须等于 Φ_max；两个常数共享输入须一致"
+  },
+  "C7_hardflaw_D_bare_constants": {
+   "for_some_c_in_proof": false,
+   "bare_constant_phrases": [],
+   "has_explicit_constants": true,
+   "pass": true
+  },
+  "C8_hardflaw_E_overclaim_wording": {
+   "hits": [
+    {
+     "pattern": "if and only if",
+     "line": 60,
+     "context": "$L^*$ 是可恢复域的**上界（必要界）**，不是精确边界、不是充要条件。主轴方向数值上 $L_{\\rm suff}/L^*\\approx0.997$（紧）属**数值观测**，不作为定理结论，也不写 \"tight / "
+    },
+    {
+     "pattern": "充要",
+     "line": 60,
+     "context": "$L^*$ 是可恢复域的**上界（必要界）**，不是精确边界、不是充要条件。主轴方向数值上 $L_{\\rm suff}/L^*\\approx0.997$（紧）属**数值观测**，不作为定理结论，也不写 \"tight / "
+    },
+    {
+     "pattern": "精确边界",
+     "line": 60,
+     "context": "$L^*$ 是可恢复域的**上界（必要界）**，不是精确边界、不是充要条件。主轴方向数值上 $L_{\\rm suff}/L^*\\approx0.997$（紧）属**数值观测**，不作为定理结论，也不写 \"tight / "
+    },
+    {
+     "pattern": "精确边界",
+     "line": 77,
+     "context": "| $L^*$ 为上界而非精确边界 | Remark 2 | 措辞扫描（E） |"
+    },
+    {
+     "pattern": "arbitrary impulse direction",
+     "line": 57,
+     "context": "A1 在**组合方向**不成立（$\\omega\\times J\\omega\\neq0$，陀螺重定向），故 Theorem 1 **仅对主轴冲击严格成立**。组合方向的 $L^*$ 目前只有数值观测支持（`probe_v2"
+    },
+    {
+     "pattern": "tight",
+     "line": 60,
+     "context": "$L^*$ 是可恢复域的**上界（必要界）**，不是精确边界、不是充要条件。主轴方向数值上 $L_{\\rm suff}/L^*\\approx0.997$（紧）属**数值观测**，不作为定理结论，也不写 \"tight / "
+    }
+   ],
+   "pass": true,
+   "note": "命中需人工判读是否属Remark诚实限定；'任意扰动'若出现在定理陈述即为超证"
+  },
+  "C9_hardflaw_F_dangling_xref": {
+   "count": 0,
+   "pass": true,
+   "note": "本草稿为内部单文件，不含指向他节的 \\ref；若命中须 grep 目标节确认字面存在"
+  },
+  "C10_A1_failure_on_combo": {
+   "gyro_norm_principal_roll": 0.0,
+   "gyro_norm_principal_yaw": 0.0,
+   "gyro_norm_combo": 0.04723,
+   "combo_Lsuff_over_Lnec_adv_arm": [
+    0.225,
+    0.231,
+    0.208
+   ],
+   "pass": true,
+   "note": "组合方向 ω×Jω 非零 ⇒ A1 失效 ⇒ Theorem 1 严格适用仅限主轴；Remark 1 的限定有数值依据"
+  }
+ },
+ "notes": [],
+ "summary": {
+  "all_must_pass": true,
+  "must_pass_results": {
+   "C0_draft_uncleaned_selfnotes": true,
+   "C2_disturbance_sign_verdict": true,
+   "C3_existence_condition": true,
+   "C4b_rhs_equivalence_probe": true,
+   "C4_lemma1_trajectory": true,
+   "C5_P10_independent_recompute": true,
+   "C6_13b_reverse_solve": true,
+   "C7_hardflaw_D_bare_constants": true,
+   "C10_A1_failure_on_combo": true
+  },
+  "failed": [],
+  "draft_revision_status": "C0/C2 修订已落地：Theorem 1 限定对抗扰动、§3 自查文字已清理；Remark 1/2/3 保留主轴限定/上界非精确/存在性条件",
+  "revisions_required": []
+ }
+}

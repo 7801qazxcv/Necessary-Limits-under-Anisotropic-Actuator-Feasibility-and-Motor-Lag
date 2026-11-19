@@ -1,0 +1,168 @@
+{
+  "probe": "v1",
+  "status": "EXECUTED",
+  "frozen_criteria_source": "preregistration_probe_v1.md",
+  "model": "scalar reduced-order (NOT full 6-DoF); parameters are RESEARCH ASSUMPTIONS",
+  "params": {
+    "J": 0.015,
+    "tau_max": 0.15,
+    "Phi_max_rad": 1.0471975511965976,
+    "d": 0.0,
+    "eps": 0.05,
+    "omega_th": 0.2,
+    "T_hor": 2.0,
+    "dt": 0.0002,
+    "T_char_s": 0.3236043187592832,
+    "T_m_list": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ]
+  },
+  "self_test": {
+    "S1_no_impact_baseline": {
+      "ok": true,
+      "max_abs_phi": 0.0,
+      "w_final": 0.0,
+      "pass": true
+    },
+    "S2_scan_has_transition": {
+      "recover_by_dw": {
+        "0.5": true,
+        "1.0": true,
+        "2.0": true,
+        "3.0": true,
+        "4.0": true,
+        "6.0": false,
+        "8.0": false
+      },
+      "pass": true
+    },
+    "S3_discrimination_ratio": {
+      "phi_peak_min_8_over_0p5": 125.21615526479009,
+      "threshold": 10.0,
+      "pass": true
+    },
+    "S5a_dt_convergence": {
+      "max_phi_dt": 0.5875283249795886,
+      "max_phi_dt_half": 0.5875283249794582,
+      "abs_diff": 1.304512053934559e-13,
+      "pass": true
+    },
+    "S5b_determinism": {
+      "no_drift": true,
+      "pass": true
+    },
+    "S4_boundary_in_scan": {
+      "dw_star_range": [
+        3.325885332062086,
+        4.478640739775502
+      ],
+      "pass": true
+    }
+  },
+  "gate_ok": true,
+  "rows": [
+    {
+      "T_m_s": 0.01,
+      "mu": 0.03090193616185517,
+      "L_nec_Nms": 0.06717961109663252,
+      "lambda_star": 1.3839867023242634,
+      "dw_star_rad_s": 4.478640739775502,
+      "L_suff_Nms": 0.06717878043803012,
+      "dw_max_rad_s": 4.478585362535341,
+      "gap_Nms": 8.306586024020568e-07,
+      "gap_pct": 0.001236474264799212,
+      "L_suff_ideal_Nms": 0.06717961176921107,
+      "ideal_vs_nec_pct": 1.001164694810885e-06,
+      "G1_hard_bound_ok": true
+    },
+    {
+      "T_m_s": 0.02,
+      "mu": 0.06180387232371034,
+      "L_nec_Nms": 0.0657778233181503,
+      "lambda_star": 1.3551080646955125,
+      "dw_star_rad_s": 4.38518822121002,
+      "L_suff_Nms": 0.06577738725247854,
+      "dw_max_rad_s": 4.3851591501652365,
+      "gap_Nms": 4.360656717522504e-07,
+      "gap_pct": 0.0006629372176745857,
+      "L_suff_ideal_Nms": 0.06577782439587736,
+      "ideal_vs_nec_pct": 1.638435275000907e-06,
+      "G1_hard_bound_ok": true
+    },
+    {
+      "T_m_s": 0.05,
+      "mu": 0.15450968080927585,
+      "L_nec_Nms": 0.06196134386176227,
+      "lambda_star": 1.2764836616792894,
+      "dw_star_rad_s": 4.130756257450818,
+      "L_suff_Nms": 0.06196116625108061,
+      "dw_max_rad_s": 4.1307444167387075,
+      "gap_Nms": 1.7761068165506044e-07,
+      "gap_pct": 0.00028664756214990357,
+      "L_suff_ideal_Nms": 0.06196134467538741,
+      "ideal_vs_nec_pct": 1.3131173224702076e-06,
+      "G1_hard_bound_ok": true
+    },
+    {
+      "T_m_s": 0.1,
+      "mu": 0.3090193616185517,
+      "L_nec_Nms": 0.05682357583830406,
+      "lambda_star": 1.1706390086957386,
+      "dw_star_rad_s": 3.788238389220271,
+      "L_suff_Nms": 0.056823487263523015,
+      "dw_max_rad_s": 3.788232484234868,
+      "gap_Nms": 8.857478104445926e-08,
+      "gap_pct": 0.0001558768165109949,
+      "L_suff_ideal_Nms": 0.0568235758775927,
+      "ideal_vs_nec_pct": 6.914144561435731e-08,
+      "G1_hard_bound_ok": true
+    },
+    {
+      "T_m_s": 0.15,
+      "mu": 0.4635290424278275,
+      "L_nec_Nms": 0.05292413630358951,
+      "lambda_star": 1.0903055209832297,
+      "dw_star_rad_s": 3.5282757535726343,
+      "L_suff_Nms": 0.052924073719009354,
+      "dw_max_rad_s": 3.5282715812672905,
+      "gap_Nms": 6.258458015717672e-08,
+      "gap_pct": 0.00011825338026901725,
+      "L_suff_ideal_Nms": 0.05292413634931563,
+      "ideal_vs_nec_pct": 8.639936431781854e-08,
+      "G1_hard_bound_ok": true
+    },
+    {
+      "T_m_s": 0.2,
+      "mu": 0.6180387232371034,
+      "L_nec_Nms": 0.04988827998093129,
+      "lambda_star": 1.0277629621303306,
+      "dw_star_rad_s": 3.325885332062086,
+      "L_suff_Nms": 0.04988822832272035,
+      "dw_max_rad_s": 3.3258818881813568,
+      "gap_Nms": 5.165821093805478e-08,
+      "gap_pct": 0.00010354778909555514,
+      "L_suff_ideal_Nms": 0.049888280305526674,
+      "ideal_vs_nec_pct": 6.506445710629506e-07,
+      "G1_hard_bound_ok": true
+    }
+  ],
+  "analytic_note": "L_nec derived WITHOUT any controller/Lyapunov: |tau(t)|<=tau_max(1-e^{-t/Tm}) => omega(t)>=dw-A(t) => phi(t*)>=g(t*); g(t*)=Phi_max defines dw*.",
+  "go": {
+    "G1_hard_upper_bound": true,
+    "G2_monotone_and_discriminating": true,
+    "G2_mono": true,
+    "G2_ratio_Lnec_001_over_020": 1.346601067872263,
+    "G3_gap": {
+      "gap_all_nonneg": true,
+      "gap_min": 5.165821093805478e-08,
+      "gap_max": 8.306586024020568e-07,
+      "note": "scalar + near-optimal controller => necessary bound is TIGHT; gray band must be opened by multi-axis anisotropy / non-ideal controller / sustained disturbance (not forged here)."
+    },
+    "VERDICT": "GO"
+  }
+}
