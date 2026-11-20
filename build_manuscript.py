@@ -12,6 +12,8 @@ PROSE = r"""
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage{amssymb,amsmath,amsthm,booktabs,graphicx,url}
 \usepackage[margin=2.2cm]{geometry}
+\emergencystretch=2em
+\tolerance=2000
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem{remark}{Remark}
@@ -689,12 +691,16 @@ the limit stops being informative. We state the object of study (recoverability
 bounds under anisotropic actuation) separately from the application vehicle (a
 quadrotor), so the result is read at the control-theory level.
 
+{\raggedright
 \textbf{Declarations.} The authors declare no competing interests. Data
-availability: all result artifacts and regeneration scripts are available from
-the corresponding author upon reasonable request. Author contributions
+availability: all result artifacts, regeneration scripts and the manuscript
+source are publicly available at
+\url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
+Author contributions
 (CRediT), funding confirmation, the generative-AI disclosure approval and
 submission approval are author-supplied values; they remain subject to author
 confirmation and are not inferred or inherited from another manuscript.
+\par}
 
 \section*{Declaration of generative AI and AI-assisted technologies in the writing process}
 \label{sec:ai}

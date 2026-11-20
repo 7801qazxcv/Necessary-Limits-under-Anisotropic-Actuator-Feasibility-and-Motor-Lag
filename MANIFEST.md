@@ -1,7 +1,5 @@
 # Replication bundle manifest
 
-Local preparation only — NOT yet public (see REPO_PUSH_INSTRUCTIONS.md).
-
 SHA-256 of every file follows. Generated mechanically; no values transcribed by hand.
 
 | file | bytes | sha256 |
@@ -9,7 +7,7 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `asym_diagnostic.json` | 25702 | `4e2e089cc09bc8361252ea4f68a9167ea38f64dd0a3bc950ea3ab2fc04254fae` |
 | `asym_diagnostic.py` | 7114 | `b23e97be4e128ee413ad1c97591b9b76c7788818e97cbe4d2d205dbb66285c44` |
 | `build_figures.py` | 4953 | `675ff67264f10772b99c5f14d4a4e8ae3c43f931221d96c3caf5f3771bd80e9d` |
-| `build_manuscript.py` | 42757 | `6fbacd36e05c856ab99d2e25f4bb230a6a309facbe1587c026fdf7c86c0c9ba4` |
+| `build_manuscript.py` | 42902 | `f882cec656371f4918f4bd261d0e1e71a1ccca558eca97309cb64e3b33b54ca7` |
 | `build_manuscript_numbers.py` | 13261 | `e8688c5818b4a5542cc9ea99d11c165a04dc8afc7e4be35b0757e6cc3d94fdd2` |
 | `build_refs_bib.py` | 3630 | `2d39d3eef9f873115f7150a363f589e2eb2548612fab20320a0267b6d3699a3a` |
 | `build_submission.py` | 2179 | `b3c390851f4e461ab05e1842dd2f3db7cc673ab0e94a24f784ac40886e2ff155` |
@@ -29,8 +27,8 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `paper/figures/fig2.pdf` | 17639 | `40ba5909629eb3d10d14ea835b76aff1954afd7ce61549a562f7000ebafe3cc9` |
 | `paper/figures/fig3.pdf` | 18087 | `360956124a7cabb0a20f2009f43b1fa9260acdf6ca89d1920b96588b96648ecb` |
 | `paper/figures/fig4.pdf` | 14215 | `9016c49a6e8bce8106b8e53ccfcba464d96188438e36715b95d5265420099cc1` |
-| `paper/main.pdf` | 436526 | `4d947ac0e2eff1753ff2ff25fecf65e7be9065b133764f3c2e65437b8ee5d4a0` |
-| `paper/main.tex` | 44017 | `69907e66133ae5ccb6059b5ee3b5fd44ac0764f53945839928711f0e16406c9d` |
+| `paper/main.pdf` | 442987 | `25eb2911016c25a88638e4a68741f22f1ff4739db8e4e1dace63be978878c691` |
+| `paper/main.tex` | 44162 | `2a3c4278aae41eb77764108d4c2f3f525c066a6ad68922bab533b3008f4cf6fe` |
 | `paper/provenance.md` | 3462 | `5b253833d8b894d22204b1eb6cea12e9c32b4285fdb0d5f51bb65d8cf3514aa4` |
 | `paper/refs.bib` | 9271 | `92537a2f46c4512227ac93c9afc5591598d1db4c6e6012d281a84bb305cb2547` |
 | `param_sensitivity.json` | 23347 | `dad5806cd863334144f5848e20c7ea221ff987d944837dcbd8236c835a2063c5` |

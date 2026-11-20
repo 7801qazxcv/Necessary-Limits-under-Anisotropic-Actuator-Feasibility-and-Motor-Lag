@@ -6,9 +6,9 @@ It is a **pre-submission** manuscript; see "Author-side decisions still open".
 
 The repository was populated on 2026-11-19 and verified through the GitHub API:
 one commit, a non-truncated recursive tree, and every blob SHA matching the local
-commit. The manuscript's Data-availability statement still reads "available from
-the corresponding author upon reasonable request" — citing this repository in the
-paper is an author-side decision that has not been taken automatically.
+commit. The manuscript's Data-availability statement cites this repository directly.
+The bundle's `build_manuscript.py` regenerates that same source from the artifact
+macros, so the archived generator and the archived `paper/main.tex` agree.
 
 ## What is here
 - Frozen preregistration criteria (`preregistration_*.md`) and all amendments, so the
