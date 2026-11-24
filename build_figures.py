@@ -40,21 +40,27 @@ ax.set_xlim(0,1.0); ax.set_ylim(0,1.25); ax.set_yticks([0,0.5,1.0]); style(ax)
 ax.legend(loc="upper center",bbox_to_anchor=(0.5,-0.22),frameon=False,ncol=1,handlelength=2.2)
 save(fig,1)
 
-# ---- Fig.2: necessary bound vs mu, dual platform, from analytic dicts ----
-fig,ax=plt.subplots(figsize=(3.5,2.6))
-for tag,res,ms,fmt in [("Synthetic (literature-anchored)",syn,"o","-"),
-                       ("Identified Crazyflie",real,"s","--")]:
-    Tm=sorted({float(k) for dk in res["analytic"].values() for k in dk.keys()})
-    xs=[];ys=[]
-    for tm in Tm:
-        vals=[res["analytic"][dk][str(tm)]["L_nec"] for dk in res["analytic"]
-              if str(tm) in res["analytic"][dk] and res["analytic"][dk][str(tm)]["L_nec"]==res["analytic"][dk][str(tm)]["L_nec"]]
-        if vals: xs.append(tm);ys.append(float(np.mean(vals)))
-    ax.plot(xs,ys,fmt,marker=ms,label=tag)
-ax.set_xlabel("motor time constant $T_m$ (s)"); ax.set_ylabel("$L^*$ (N m s, mean over axes)")
-ax.set_xlim(0,max(max(ax.get_xlim()),0.26)); style(ax)
-ax.legend(loc="upper center",bbox_to_anchor=(0.5,-0.20),frameon=False,handlelength=2.2)
+# ---- Fig.2: necessary bound vs Tm, TWO PANELS (platform L* differs ~1000x) ----
+dirs2=["roll","pitch","yaw","combo"]
+fig,axes=plt.subplots(2,1,figsize=(3.5,3.8))
+for ax,(tag,res) in zip(axes,[("(a) Synthetic (literature-anchored)",syn),
+                              ("(b) Identified Crazyflie",real)]):
+    for di,dk in enumerate(dirs2):
+        if dk not in res["analytic"]: continue
+        tms=sorted(res["analytic"][dk].keys(),key=float)
+        xs=[float(k) for k in tms]
+        ys=[res["analytic"][dk][k]["L_nec"] for k in tms]
+        ax.plot(xs,ys,"-o",ms=4,label=dk,color="C%d"%di)
+    ax.set_title(tag,fontsize=8,pad=2)
+    ax.set_ylabel("$L^*$ (N m s)")
+    style(ax)
+axes[-1].set_xlabel("motor time constant $T_m$ (s)")
+handles,labels=axes[0].get_legend_handles_labels()
+fig.legend(handles,labels,loc="lower center",bbox_to_anchor=(0.5,0.005),
+           ncol=4,frameon=False,fontsize=7,handlelength=1.4)
+fig.tight_layout(rect=[0,0.10,1,1])
 save(fig,2)
+
 
 # ---- Fig.3: anisotropy ratio V3, synthetic GO vs real NO-GO ----
 fig,ax=plt.subplots(figsize=(3.5,2.4))
@@ -64,28 +70,61 @@ v3=[syn["go_evaluation"]["V3_anisotropy"]["yaw_over_roll_Lsuff"],
 tau=[syn["go_evaluation"]["V3_anisotropy"]["tau_max_yaw_over_roll"],
      real["go_evaluation"]["V3_anisotropy"]["tau_max_yaw_over_roll"]]
 x=np.arange(2);w=0.34
-ax.bar(x-w/2,v3,w,label="$L_{\\rm suff,yaw}/L_{\\rm suff,roll}$",color="C0")
-ax.bar(x+w/2,tau,w,label="$\\tau_{\\max,yaw}/\\tau_{\\max,roll}$",color="C3")
+b1=ax.bar(x-w/2,v3,w,label="$L_{\\rm suff,yaw}/L_{\\rm suff,roll}$",color="C0")
+b2=ax.bar(x+w/2,tau,w,label="$\\tau_{\\rm max,yaw}/\\tau_{\\rm max,roll}$",color="C3")
+for bars in (b1,b2):
+    for bar in bars:
+        ax.text(bar.get_x()+bar.get_width()/2,bar.get_height()+0.012,
+                "%.3f"%bar.get_height(),ha="center",va="bottom",fontsize=7)
 ax.axhline(0.6,color="k",ls=":",lw=1,label="conditional discriminator 0.6")
 ax.set_xticks(x);ax.set_xticklabels(labels);ax.set_ylim(0,0.8)
 ax.set_ylabel("dimensionless ratio");style(ax)
 ax.legend(loc="upper center",bbox_to_anchor=(0.5,-0.24),frameon=False,ncol=1,handlelength=2.0)
 save(fig,3)
 
-# ---- Fig.4: failure boundary, first_fail_dw from asym diagnostic ----
-fig,ax=plt.subplots(figsize=(3.5,2.5))
-models=[("sym-fast","fast","fast"),("sym-slow","slow","slow"),("asym","asym","slow")]
-for i,(lab,m,g) in enumerate(models):
-    vals=[]
-    for dk in ["roll","pitch","yaw","combo"]:
-        for fam in ["qpd","qpd_ff","proposed"]:
-            v=asym["boundary"].get(f"{m}|{g}|{dk}|{fam}")
-            if v and v.get("first_fail_dw") is not None: vals.append(v["first_fail_dw"])
-    ax.scatter([i]*len(vals),vals,s=18,label=lab,alpha=0.8)
-ax.set_xticks(range(3));ax.set_xticklabels(["sym-fast","sym-slow","asym"])
-ax.set_ylabel("first failing $\\Delta\\omega$ (rad/s)")
-ax.set_ylim(0,25);style(ax)
-ax.legend(loc="upper center",bbox_to_anchor=(0.5,-0.20),frameon=False,ncol=3,handlelength=1.4)
+
+# ---- Fig.4: grouped scatter, direction-shaped, n-labelled, dual range ----
+dirs4=["roll","pitch","yaw","combo"]
+fams4=["qpd","smc","qpd_ff","proposed"]
+markers4=["o","s","^","D"]
+groups4=[("sym-fast","fast","fast"),("sym-slow","slow","slow"),("asym","asym","slow")]
+data4={}
+for gi,(lab,m,g) in enumerate(groups4):
+    data4[gi]={}
+    for dk in dirs4:
+        vals=[]
+        for fam in fams4:
+            v=asym["boundary"].get("%s|%s|%s|%s"%(m,g,dk,fam))
+            if v and v.get("first_fail_dw") is not None:
+                vals.append(v["first_fail_dw"])
+        data4[gi][dk]=vals
+fig,axes=plt.subplots(2,1,figsize=(3.5,3.9))
+for ax,(ylim,ptitle) in zip(axes,[((0,25),"(a) full range, all three models"),
+                                  ((0,0.9),"(b) low-value detail, slow models")]):
+    for gi,(lab,m,g) in enumerate(groups4):
+        if ylim[1]<1 and gi==0:   # sym-fast has no point in the detail range
+            continue
+        for di,dk in enumerate(dirs4):
+            vals=data4[gi][dk]
+            j=(np.arange(len(vals))-(len(vals)-1)/2.0)*0.022
+            ax.scatter(np.full(len(vals),gi)+j,vals,s=15,marker=markers4[di],
+                       color="C%d"%di,alpha=0.8,label=dk if gi==0 else None)
+        allv=[v for dk in dirs4 for v in data4[gi][dk]]
+        n=len(allv)
+        ax.text(gi,ylim[1]*0.93,"n=%d"%n,ha="center",fontsize=7,
+                bbox=dict(facecolor="white",alpha=0.75,edgecolor="none",pad=0.6))
+        # median only where the group has non-zero spread (slow|slow is all grid floor)
+        if n>=2 and (max(allv)-min(allv))>1e-9:
+            ax.hlines(float(np.median(allv)),gi-0.30,gi+0.30,
+                      color="k",lw=1.0,alpha=0.7)
+    ax.set_ylim(*ylim);ax.set_ylabel("first failing $\\Delta\\omega$ (rad/s)")
+    ax.set_title(ptitle,fontsize=8,pad=2);style(ax)
+axes[1].set_xticks(range(3));axes[1].set_xticklabels([g[0] for g in groups4])
+handles,labels=axes[0].get_legend_handles_labels()
+fig.legend(handles,labels,loc="lower center",bbox_to_anchor=(0.5,0.005),
+           ncol=4,frameon=False,fontsize=7,handlelength=1.2)
+fig.tight_layout(rect=[0,0.10,1,1])
 save(fig,4)
+
 print("WROTE 4 figures in",FIG)
 for n in range(1,5): print("  fig%d.pdf"%n,os.path.getsize(os.path.join(FIG,"fig%d.pdf"%n)),"bytes")

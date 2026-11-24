@@ -10,6 +10,9 @@ numbers=open(os.path.join(HERE,"numbers.tex"),encoding="utf-8",newline="\n").rea
 
 PROSE = r"""
 \documentclass[preprint,12pt]{elsarticle}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\pdfinfo{/Title (A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class) /Author (Sen Fu; Bin Liu) /Subject (Quadrotor attitude recovery and actuator feasibility) /Keywords (Post-impulse recovery; non-recoverability bound; anisotropic actuator feasibility; motor lag; three-way domain decomposition)}
 \usepackage{amssymb,amsmath,amsthm,booktabs,graphicx,url}
 \usepackage[margin=2.2cm]{geometry}
 \emergencystretch=2em
@@ -571,20 +574,33 @@ value is plotted.}\label{fig:domains}
 \end{figure}
 \begin{figure}[t]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig2.pdf}
-\caption{Necessary bound $L^*$ versus motor time constant on the synthetic and
-identified platforms, regenerated from the analytic result dictionaries.}
+\caption{Necessary bound $L^*$ versus motor time constant $T_m$ on the
+(a) synthetic and (b) identified platforms, shown on two panels because the
+two platforms differ by three orders of magnitude in $L^*$. Each panel plots
+the four impulse directions separately (roll, pitch, yaw, combination) rather
+than a mean over axes; all values are regenerated from the analytic result
+dictionaries.}
 \label{fig:lstar}
 \end{figure}
 \begin{figure}[t]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig3.pdf}
 \caption{Anisotropy ratios on both platforms against the conditional
-discriminator. The synthetic advantage does not replicate on the identified
-platform.}\label{fig:aniso}
+discriminator; the value above each bar is printed. The horizontal line at 0.6
+is a study-specific conditional discriminator adopted for this comparison, not
+a universal physical threshold. The synthetic advantage does not replicate on
+the identified platform.}\label{fig:aniso}
 \end{figure}
 \begin{figure}[t]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig4.pdf}
 \caption{Failure boundary: first failing angular-velocity jump across
-symmetric-fast, symmetric-slow and asymmetric actuator models.}
+symmetric-fast, symmetric-slow and asymmetric actuator models. Points are
+grouped by model and shaped by impulse direction
+(roll/pitch/yaw/combination), with a small horizontal jitter to expose
+overlaps; the effective sample count $n$ is printed in each group. The upper
+panel covers the full range and the lower panel enlarges the low-value
+region. A median line is drawn only for groups with non-zero spread: all
+symmetric-slow values equal the grid-floor impulse, so no error bar or median
+line is shown there.}
 \label{fig:failure}
 \end{figure}
 

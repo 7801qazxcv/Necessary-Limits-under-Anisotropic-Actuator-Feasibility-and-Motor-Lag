@@ -6,8 +6,8 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 |---|---|---|
 | `asym_diagnostic.json` | 25702 | `4e2e089cc09bc8361252ea4f68a9167ea38f64dd0a3bc950ea3ab2fc04254fae` |
 | `asym_diagnostic.py` | 7114 | `b23e97be4e128ee413ad1c97591b9b76c7788818e97cbe4d2d205dbb66285c44` |
-| `build_figures.py` | 4953 | `675ff67264f10772b99c5f14d4a4e8ae3c43f931221d96c3caf5f3771bd80e9d` |
-| `build_manuscript.py` | 42964 | `13b5a90539a4c88c2d9b82caf87fa926ebd26898474510c2428255fea955a7a3` |
+| `build_figures.py` | 6522 | `bb75457728db4766d5534c6bff020c30ce2c81e4792b9109bbc86e8179162253` |
+| `build_manuscript.py` | 44259 | `a4b7a1e77e06eb20814a2b419e7ab38daa432fdc05d1a5746626c89749d8ccdb` |
 | `build_manuscript_numbers.py` | 13261 | `e8688c5818b4a5542cc9ea99d11c165a04dc8afc7e4be35b0757e6cc3d94fdd2` |
 | `build_refs_bib.py` | 3630 | `2d39d3eef9f873115f7150a363f589e2eb2548612fab20320a0267b6d3699a3a` |
 | `build_submission.py` | 2179 | `b3c390851f4e461ab05e1842dd2f3db7cc673ab0e94a24f784ac40886e2ff155` |
@@ -23,14 +23,14 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `math_redteam.py` | 4083 | `1b5fa1881dcd970fef6a210b1066b3fdd8daccbb740efb8a7df0719da440cf51` |
 | `numbers.tex` | 2350 | `59e6ab0da5a8737767cebee2e2c48d99a0b49c7a3167705a29e3e1356511da70` |
 | `paper/baseline_set.md` | 1983 | `a2709403f577fd4c60ab7a494226502962528e835a3697c86f6edf0ec952c4d7` |
-| `paper/figures/fig1.pdf` | 20632 | `00f056de8f8345570dad15388bbdb24d00f6757fe52b2c58a702c301380dd35e` |
-| `paper/figures/fig2.pdf` | 17639 | `40ba5909629eb3d10d14ea835b76aff1954afd7ce61549a562f7000ebafe3cc9` |
-| `paper/figures/fig3.pdf` | 18087 | `360956124a7cabb0a20f2009f43b1fa9260acdf6ca89d1920b96588b96648ecb` |
-| `paper/figures/fig4.pdf` | 14215 | `9016c49a6e8bce8106b8e53ccfcba464d96188438e36715b95d5265420099cc1` |
-| `paper/main.pdf` | 443037 | `d275d3a72164fb89230b64c0fa8e8224ede60cf3b518d38c50d4a828ab01a3ac` |
-| `paper/main.tex` | 44224 | `d97ef148ab92db16944759de241cf8df77491f83e6737d0347624aeb270939da` |
+| `paper/figures/fig1.pdf` | 20632 | `d8976e8042bc3ffae2b765d5e8bb63f33a024fbb518aa10915b26ea719a3c664` |
+| `paper/figures/fig2.pdf` | 20888 | `8e830e7a17885328a69c4a0ff7e45e8c543d155b63ea2425196522ff201dcc20` |
+| `paper/figures/fig3.pdf` | 16845 | `a16ad8e9e7604d546aa1a775d9185c52752f3071e51b31917115fed9f8703a45` |
+| `paper/figures/fig4.pdf` | 23549 | `f2815494b9f917667af0e4bbe89b5f346ea079d90f28200471b0e52efad5d3f6` |
+| `paper/main.pdf` | 502695 | `1432d56d9caad5b1dcf11a0f1a481ea1c506e86c58f111d82eef0c7d81bb515b` |
+| `paper/main.tex` | 45519 | `5bd6c5ec315305ec9048f98038b651a8684cfcec75d97e37a5274245eff7b7f2` |
 | `paper/provenance.md` | 3462 | `5b253833d8b894d22204b1eb6cea12e9c32b4285fdb0d5f51bb65d8cf3514aa4` |
-| `paper/refs.bib` | 9271 | `92537a2f46c4512227ac93c9afc5591598d1db4c6e6012d281a84bb305cb2547` |
+| `paper/refs.bib` | 8615 | `2a8007d4b4ccb015ecfd51b5d968eae4cb2fd3317196e5f58321123c6810c390` |
 | `param_sensitivity.json` | 23347 | `dad5806cd863334144f5848e20c7ea221ff987d944837dcbd8236c835a2063c5` |
 | `param_sensitivity.py` | 11194 | `f5a69384d1d5d1e4ca7794de4266dd564fb21434b8a0c0a069d13cb9cf3cddbb` |
 | `param_sources.json` | 4289 | `fc197e8d4b93481d1c17f44b3cdd513396e04284d71a22f0baeab5f6695c7040` |
