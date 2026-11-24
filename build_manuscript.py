@@ -696,10 +696,11 @@ quadrotor), so the result is read at the control-theory level.
 availability: all result artifacts, regeneration scripts and the manuscript
 source are publicly available at
 \url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
-Author contributions
-(CRediT), funding confirmation, the generative-AI disclosure approval and
-submission approval are author-supplied values; they remain subject to author
-confirmation and are not inferred or inherited from another manuscript.
+\textbf{CRediT author contributions.} Sen Fu: conceptualization,
+methodology, formal analysis, writing -- original draft, writing -- review
+and editing, and corresponding author. Bin Liu: validation, data curation,
+and writing -- review and editing.
+\textbf{Funding.} No funding was received for this work.
 \par}
 
 \section*{Declaration of generative AI and AI-assisted technologies in the writing process}
