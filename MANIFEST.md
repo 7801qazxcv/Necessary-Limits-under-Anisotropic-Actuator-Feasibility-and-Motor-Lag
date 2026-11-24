@@ -4,12 +4,12 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 
 | file | bytes | sha256 |
 |---|---|---|
-| `LICENSE` | 1075 | `5471db72a92225415919286857359371600bf1a7c07957948324daf6925c3780` |
+| `LICENSE` | 1068 | `ff54d3fa03d2de1304d917c97984c34246f477b9e9bac0acdc85a43ab5af0cb3` |
 | `asym_diagnostic.json` | 25702 | `4e2e089cc09bc8361252ea4f68a9167ea38f64dd0a3bc950ea3ab2fc04254fae` |
 | `asym_diagnostic.py` | 7114 | `b23e97be4e128ee413ad1c97591b9b76c7788818e97cbe4d2d205dbb66285c44` |
 | `author_initials.json` | 5677 | `7a4c5e9fc7b44b081e59fc173c5a5244a34b08f006035ff6244efd5c2454fab7` |
 | `build_figures.py` | 6579 | `88a91fb8c67cfd5998e275872d171ad7bf8a97fbeec0c301e9de4f84ec69733b` |
-| `build_manuscript.py` | 46150 | `6e4f9a77ce770ceec19f78eedad465867cd8eefaf51acd79150d08c5ce9c00ca` |
+| `build_manuscript.py` | 44558 | `a875afdbc5524fe5769cebc000bf6b8d7cf106df043e9ba5b14f9f143cf2daf4` |
 | `build_manuscript_numbers.py` | 13261 | `e8688c5818b4a5542cc9ea99d11c165a04dc8afc7e4be35b0757e6cc3d94fdd2` |
 | `build_refs_bib.py` | 4360 | `3e6ea717bd8b6f308c0916c37f914af88f46579fbc5009301211d6b981a2a132` |
 | `build_submission.py` | 2431 | `d738b94c8028d5bf0f97371f2c143e72fd3ddc6b70a0fda883ac4c7e0cfbad78` |
@@ -32,12 +32,10 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `paper/figures/fig3.pdf` | 16043 | `7e7dbe037464dbfef736f4f0d6cc2b1b44feac1fa3299a16db1d9a0798920f80` |
 | `paper/figures/fig4.pdf` | 22732 | `3539de99142d27cb1802d478f1e81386b49449e1a7117e84a948c7b9b707c865` |
 | `paper/highlights.txt` | 389 | `d1e4892d4a719f1a5d8e1e81c2ba8856f05317c1a1839ac14c7111dec4f98916` |
-| `paper/main.pdf` | 462268 | `614679ba2a0ca947b0cf5105f1dc73ec15b4eaefae3ea279088d31403710ad19` |
+| `paper/main.pdf` | 462268 | `edeceedc1a441acc35f76c4c46224f5cfdfff234cb6d56d4dba5b4adf6c9e3a8` |
 | `paper/main.tex` | 44313 | `b2b4e20624af74c7c4f05152b7502ca34e3577a73aaf6b7738d30ad1148ae4e5` |
 | `paper/provenance.md` | 3897 | `919c9f46af18188fc5c198d80fe6c564e31740910e545027d1770fd6ca42bdbf` |
 | `paper/refs.bib` | 8970 | `d7a5e456b27bf6946d17dade55c8b17790b4e1332e03f65f4d5a3b2fd97e3dcb` |
-| `paper/title_page.pdf` | 119018 | `7a7102afd40c57709fb8c71288f44dc6f6069086398dda2935a1971aeb11ba27` |
-| `paper/title_page.tex` | 2130 | `a444bb46b6f8f9e1a1e71d49b209d98a5a5358b2e3bfe398a623b58f0a3f97e6` |
 | `param_sensitivity.json` | 23347 | `dad5806cd863334144f5848e20c7ea221ff987d944837dcbd8236c835a2063c5` |
 | `param_sensitivity.py` | 11194 | `f5a69384d1d5d1e4ca7794de4266dd564fb21434b8a0c0a069d13cb9cf3cddbb` |
 | `param_sources.json` | 4289 | `fc197e8d4b93481d1c17f44b3cdd513396e04284d71a22f0baeab5f6695c7040` |

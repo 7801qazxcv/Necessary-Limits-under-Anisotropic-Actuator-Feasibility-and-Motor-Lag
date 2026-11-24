@@ -53,13 +53,23 @@ intentionally retained so the check remains functional.
 
 ## Author-side decisions still open
 - **Preprint policy**: whether a pre-submission manuscript may be made public at all.
-- **Double-anonymized review tension**: the manuscript PDF is anonymized, but this
-  public repository ships a title page with author identities and the manuscript
-  cites the repository in Data availability. A referee searching the title can
-  therefore recover identities. The author has chosen to keep the repository
-  public; making it private until acceptance remains an open author decision.
+- **Double-anonymized review**: the author chose to keep this repository public
+  and remove author metadata from it (see the section above). Re-publishing
+  author metadata after acceptance is an author decision.
 - Clarivate Master Journal List per-ISSN re-check under an institutional login
   (the SCIE indexing line has been retrieved and verified; the site notes some
   details require a free login).
 - The venue-specific Editorial Manager URL is entered via "Submit your article"
   on the journal homepage at submission time; it is intentionally not guessed here.
+
+## Double-anonymized review: author metadata is deliberately NOT in this bundle
+`paper/title_page.tex` and `title_page.pdf` are **intentionally excluded** from
+this public repository. They carry author names, affiliations, e-mail, ORCID,
+postal address and CRediT roles, and are supplied **separately** to the editorial
+office at submission. `build_manuscript.py` contains no author identity: it
+reads a local, non-public `author_metadata_local.json` when present, and emits
+no title page when that file is absent (the public-bundle case). The `LICENSE`
+uses a neutral copyright holder for the same reason.
+The manuscript's Data-availability URL therefore remains valid and public while
+a referee searching the title cannot recover identities from this repository.
+Local `submission/` (the upload package) still contains the real title page.

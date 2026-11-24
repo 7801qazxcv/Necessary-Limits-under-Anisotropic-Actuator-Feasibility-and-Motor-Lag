@@ -746,57 +746,17 @@ print("WROTE",out,"chars",len(tex),"CR bytes",tex.count("\r"))
 
 
 # ---- Research Article (ISA Transactions): separate title page + Highlights ----
-TITLE_PAGE = r"""\documentclass[12pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{url}
-\usepackage[margin=2.2cm]{geometry}
-\pdfinfo{/Title (Title page: A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class: Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag) /Author (Sen Fu; Bin Liu) /Subject (Title page for double-anonymized review; ISA Transactions)}
-\begin{document}
-\begin{center}
-{\Large\bfseries A Controller-Independent Non-Recoverability Bound for Post-Impulse
-Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class:
-Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag}
-\par\vspace{1.2em}
-Sen Fu$^{1,*}$, Bin Liu$^{2}$
-\par\vspace{0.6em}
-$^{1}$Changsha Vocational and Technical College, Changsha, Hunan, China\\
-$^{2}$Hunan Institute of Advanced Technology, Changsha, Hunan, China
-\par\vspace{0.6em}
-$^{*}$Corresponding author: Sen Fu\\
-Full postal address: No. 157 Zhengxing Road, Leifeng Town, Yuelu District,\\
-Changsha, Hunan, P.R. China\\
-Email: \url{fs211314@gmail.com}\\
-ORCID: \url{https://orcid.org/0009-0001-8772-2449}
-\par\vspace{0.8em}
-Submitted as a Research Article (Analysis category) to ISA Transactions.
-\end{center}
-
-\vspace{1em}
-\section*{Acknowledgements}
-The authors thank the maintainers of the public quadrotor parameter registry and
-the open bibliographic APIs used for verification.
-
-\section*{Declaration of competing interests}
-The authors declare no competing interests.
-
-\section*{CRediT author contributions}
-Sen Fu: conceptualization, methodology, formal analysis, writing -- original
-draft, writing -- review and editing, and corresponding author. Bin Liu:
-validation, data curation, and writing -- review and editing.
-
-\section*{Funding}
-No funding was received for this work.
-
-\section*{Data availability}
-{\raggedright
-All result artifacts, regeneration scripts and the manuscript source are
-publicly available at
-\url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
-\par}
-\end{document}
-"""
-open(os.path.join(PAPER,"title_page.tex"),"w",encoding="utf-8",newline="\n").write(TITLE_PAGE)
+# Author identity lives ONLY in the local, non-public title_page_local.tex.
+# This generator contains NO author identity. When the template is absent
+# (public replication bundle), no title page is emitted here: the title page
+# is supplied separately to the editorial office for double-anonymized review.
+TPL_LOCAL = os.path.join(HERE, "title_page_local.tex")
+if os.path.exists(TPL_LOCAL):
+    import shutil as _shutil
+    _shutil.copy2(TPL_LOCAL, os.path.join(PAPER, "title_page.tex"))
+    print("WROTE paper/title_page.tex from local (non-public) title-page template")
+else:
+    print("title_page_local.tex absent -> PUBLIC bundle: no title page emitted")
 
 HIGHLIGHTS = [
  "Controller-independent necessary non-recoverability bound for post-impulse recovery",
@@ -808,4 +768,4 @@ HIGHLIGHTS = [
 assert 3 <= len(HIGHLIGHTS) <= 5
 assert all(len(h) <= 85 for h in HIGHLIGHTS), [len(h) for h in HIGHLIGHTS]
 open(os.path.join(PAPER,"highlights.txt"),"w",encoding="utf-8",newline="\n").write("\n".join(HIGHLIGHTS)+"\n")
-print("WROTE paper/title_page.tex and paper/highlights.txt (5 bullets, max %d chars)" % max(len(h) for h in HIGHLIGHTS))
+print("WROTE paper/highlights.txt (%d bullets, max %d chars)" % (len(HIGHLIGHTS), max(len(h) for h in HIGHLIGHTS)))
