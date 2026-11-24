@@ -9,7 +9,7 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `build_figures.py` | 6522 | `bb75457728db4766d5534c6bff020c30ce2c81e4792b9109bbc86e8179162253` |
 | `build_manuscript.py` | 44259 | `a4b7a1e77e06eb20814a2b419e7ab38daa432fdc05d1a5746626c89749d8ccdb` |
 | `build_manuscript_numbers.py` | 13261 | `e8688c5818b4a5542cc9ea99d11c165a04dc8afc7e4be35b0757e6cc3d94fdd2` |
-| `build_refs_bib.py` | 3630 | `2d39d3eef9f873115f7150a363f589e2eb2548612fab20320a0267b6d3699a3a` |
+| `build_refs_bib.py` | 3438 | `4d78ca485de2b460f7666c0d604546db12d7ec1eea618e8fb7db14f0756c6502` |
 | `build_submission.py` | 2179 | `b3c390851f4e461ab05e1842dd2f3db7cc673ab0e94a24f784ac40886e2ff155` |
 | `citation_layer2.json` | 41161 | `cc3375ecb9eb2a2161ebf0ca4430da4839391b6438bfca1e001585f43037710e` |
 | `experiments/run_all_experiments.py` | 5677 | `e3694fd86313c4b4d0b36019ed9838c36e51691ad57a82d92900a0720e8eafcf` |
