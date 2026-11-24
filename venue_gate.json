@@ -178,5 +178,30 @@
       "no_drift": true
     },
     "honest_caveat": "Raises the evidence threshold: Technical Notes are exempt from 'extensive comprehensive defence required of regular papers'; Research Articles are not. L3 novelty/significance unchanged."
+  },
+  "verified_2026_11_24": {
+    "clarivate_per_issn": "SCIE (Science Citation Index Expanded), ISSN 0019-0578 / eISSN 1879-2022, Exact Match Found; via mjl.clarivate.com rendered through reader proxy; institutional recheck advised (non-blocking)",
+    "peer_review_model": "double anonymized (Guide for Authors)",
+    "portal_verified_entries": [
+      "https://www.sciencedirect.com/journal/isa-transactions",
+      "https://www.isa.org/standards-and-publications/isa-publications/isa-transactions/contributing-to-isa-transactions",
+      "https://service.elsevier.com/app/answers/detail/a_id/8000/supporthub/assessment-builder",
+      "https://www.elsevier.com/editor/submission-systems"
+    ],
+    "portal_direct_EM_url": "UNVERIFIED -- do not guess editorialmanager.com/<acronym>; use Submit your article on journal homepage",
+    "publisher_metrics_days": {
+      "first_decision": 1,
+      "decision_after_review": 56,
+      "submission_to_acceptance": 214,
+      "acceptance_to_online": 8
+    },
+    "repository_licence": "MIT (author-confirmed)",
+    "corresponding_author_full_address": "author-confirmed main campus, written to title_page.tex",
+    "still_open": [
+      "preprint policy",
+      "public-repo vs double-anonymized tension",
+      "EM direct URL at submission",
+      "submission approval"
+    ]
   }
 }

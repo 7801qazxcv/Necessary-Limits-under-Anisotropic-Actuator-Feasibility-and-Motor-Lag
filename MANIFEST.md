@@ -4,17 +4,18 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 
 | file | bytes | sha256 |
 |---|---|---|
+| `LICENSE` | 1075 | `5471db72a92225415919286857359371600bf1a7c07957948324daf6925c3780` |
 | `asym_diagnostic.json` | 25702 | `4e2e089cc09bc8361252ea4f68a9167ea38f64dd0a3bc950ea3ab2fc04254fae` |
 | `asym_diagnostic.py` | 7114 | `b23e97be4e128ee413ad1c97591b9b76c7788818e97cbe4d2d205dbb66285c44` |
 | `build_figures.py` | 6522 | `bb75457728db4766d5534c6bff020c30ce2c81e4792b9109bbc86e8179162253` |
-| `build_manuscript.py` | 45694 | `704d81efd6416110a480f2e36dcd78546542b8abb065d9b1f8989e763787bd7f` |
+| `build_manuscript.py` | 45810 | `e46daac93a7576ad1e04e0afd284e741b48833ac28cc5f3e83a0a9b2b326db05` |
 | `build_manuscript_numbers.py` | 13261 | `e8688c5818b4a5542cc9ea99d11c165a04dc8afc7e4be35b0757e6cc3d94fdd2` |
 | `build_refs_bib.py` | 3438 | `4d78ca485de2b460f7666c0d604546db12d7ec1eea618e8fb7db14f0756c6502` |
 | `build_submission.py` | 2431 | `d738b94c8028d5bf0f97371f2c143e72fd3ddc6b70a0fda883ac4c7e0cfbad78` |
 | `citation_layer2.json` | 41161 | `cc3375ecb9eb2a2161ebf0ca4430da4839391b6438bfca1e001585f43037710e` |
 | `experiments/run_all_experiments.py` | 5677 | `e3694fd86313c4b4d0b36019ed9838c36e51691ad57a82d92900a0720e8eafcf` |
 | `genre_spec.md` | 18201 | `862243aca253bc44b6497abf0494b9d42285914f0ca481ebaa973f2702696760` |
-| `isa_guide_research_article.md` | 3196 | `9ad3f01caeef84a81436cc5ca79af73dc42d75ddfa67378c76060b5bf17adc18` |
+| `isa_guide_research_article.md` | 6443 | `ba6f905b6ce37c1b6acd3f830b9c99c3ceac846f5be218dfae81bc8184714b88` |
 | `m1_lemma.json` | 3066 | `58e4f9b80dcec19be820ca6727b89b41d25217c45522d1308cb431f152148313` |
 | `m1_lemma.py` | 5799 | `a9fca5c4553e99098357014a645d4ba27bcdd64a55a6d555dc96e936458b1a80` |
 | `m1_lemma_correction.py` | 3006 | `0072f0b9e6df494d2a692438018b1973384be23e8c4a12476a4c2b7ad48fbd71` |
@@ -25,17 +26,17 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `math_redteam.py` | 4083 | `1b5fa1881dcd970fef6a210b1066b3fdd8daccbb740efb8a7df0719da440cf51` |
 | `numbers.tex` | 2350 | `59e6ab0da5a8737767cebee2e2c48d99a0b49c7a3167705a29e3e1356511da70` |
 | `paper/baseline_set.md` | 1983 | `a2709403f577fd4c60ab7a494226502962528e835a3697c86f6edf0ec952c4d7` |
-| `paper/figures/fig1.pdf` | 20632 | `48811666c2bf909261abe147eebf10b8b7c3aca01035daa5534eb7606298b814` |
-| `paper/figures/fig2.pdf` | 20888 | `f7ad3b505cb4459d5f7cb2b704a2d4f11aa597d2a08c74d25243c160940c1691` |
-| `paper/figures/fig3.pdf` | 16845 | `ac96a7a7585a7cbea98300e7437b0a9c30657a85405d978b09540bad2a7b3a19` |
-| `paper/figures/fig4.pdf` | 23549 | `979d5def3272f28fffbd8c081a5ed0a2ff97faf1452bd585d4ab13b9d529f01d` |
+| `paper/figures/fig1.pdf` | 20632 | `3253e545fd80d95e2f39e8369e7920e148fa6e9dff6475daf714b0d1728ac4ef` |
+| `paper/figures/fig2.pdf` | 20888 | `b339f1ae1bc50983000a1fe8d9771e693e2a50af280dae3054e1c852e9387115` |
+| `paper/figures/fig3.pdf` | 16845 | `981d13555f8317551f6c9a56e46ce25580ac5fdc00a024e3d255f09d4510be89` |
+| `paper/figures/fig4.pdf` | 23549 | `355bcdc3159ed6b7c5702d1295709e1d11daab46e117e32806b88ac51f701d6d` |
 | `paper/highlights.txt` | 389 | `d1e4892d4a719f1a5d8e1e81c2ba8856f05317c1a1839ac14c7111dec4f98916` |
-| `paper/main.pdf` | 465111 | `a1bb87d98605398a1b905b8e7e3018ecb8309d94ae0c1178c56a402432f6b26a` |
+| `paper/main.pdf` | 465111 | `5c30065ff85e71d09d4fd4ef6e83eb78466c3c1e8fdd5294b3766a8e41b94fe9` |
 | `paper/main.tex` | 44044 | `340b8c47f8b897156bcafd74ae91fc5884b211840521b985c2b3fb01baaf86d6` |
 | `paper/provenance.md` | 3462 | `5b253833d8b894d22204b1eb6cea12e9c32b4285fdb0d5f51bb65d8cf3514aa4` |
 | `paper/refs.bib` | 8615 | `2a8007d4b4ccb015ecfd51b5d968eae4cb2fd3317196e5f58321123c6810c390` |
-| `paper/title_page.pdf` | 117843 | `874f2b2eb16b97c6d8243fcbac18f36922acd051e96c932a1c7839ec64047ef9` |
-| `paper/title_page.tex` | 1943 | `503ce4ceef4c7f2eebbfac3941b1e09c24cb23511f3bd81db4696906928bcd66` |
+| `paper/title_page.pdf` | 118947 | `2f41ff89854cafb7fdd9373b7c4486b1ea5c6f564dd345362a08cbeb3c73c453` |
+| `paper/title_page.tex` | 2059 | `aa94d996feb8ec5725bb9828d802a7d1f09ea4ec7e24950da13cc36b20b8e575` |
 | `param_sensitivity.json` | 23347 | `dad5806cd863334144f5848e20c7ea221ff987d944837dcbd8236c835a2063c5` |
 | `param_sensitivity.py` | 11194 | `f5a69384d1d5d1e4ca7794de4266dd564fb21434b8a0c0a069d13cb9cf3cddbb` |
 | `param_sources.json` | 4289 | `fc197e8d4b93481d1c17f44b3cdd513396e04284d71a22f0baeab5f6695c7040` |
@@ -66,6 +67,6 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `theorem_audit.json` | 12517 | `61fa9bd9e69caeb650b2bfde785580a8a9bb71e9b8a7bdec8728ddd7260ed2fa` |
 | `theorem_audit.py` | 14966 | `82f6e673ce2fc0e952e58b7e5ba0317cbee78d6ae5449db28e7f41b492425aca` |
 | `theorem_draft.md` | 7239 | `9e8ebb692b48c8f08d888e9ca113f2c9466bb9ef5bf6fdee4c590792c278a75d` |
-| `venue_gate.json` | 11080 | `b1e9b0a98a003e6893f166516d5200e9d2b0ca3b2ee982b3179c50a1a56a263b` |
+| `venue_gate.json` | 12405 | `8a39af4a10075c515d59e32c4fb8f9cdec6056907e253c1991f0b20321106af4` |
 | `venue_probe.py` | 4303 | `ed581da89863fd3f3cd56593e3d00b6b06914710212ff0a8f968a3d62b61d43e` |
-| `venue_report.md` | 11082 | `b269f355f92ae1760032ef1b660b139b94d4222b24f56489c0ab89695eeadec1` |
+| `venue_report.md` | 12647 | `5dbaf82e981e21771a7d919af337db229e66941b920c68a605d03657ec0dda60` |

@@ -103,3 +103,26 @@ Graphical abstract 仅「encouraged」（不强制，未做）。
 ③ Clarivate per-ISSN、ISA 门户 URL、单双盲模型（已核为 double anonymized）、
 投稿批准仍未闭合。④ 结构项（拆声明独立小标题 / Nomenclature / 章节标题精简）
 仍交作者拍板，本轮只调了顺序（Conclusions → Declarations → AI → References）。
+
+
+## 10. 2026-11-24：门户 / 索引 / 评审模型复核与 licence
+
+- **Clarivate per-ISSN**：`mjl.clarivate.com/search-results?issn=0019-0578`
+  经可渲染代理取回实际内容：Found 1 / Exact Match / ISA TRANSACTIONS /
+  ISSN 0019-0578 / eISSN 1879-2022 /
+  *Web of Science* Core Collection: **Science Citation Index Expanded**。
+  与 ScienceDirect 官方 ISSN、Elsevier A&I 页三方一致。§7 的「Clarivate 登录确认
+  未闭合」这一**实质部分已闭合**（页面标注部分详情需免费登录，建议作者机构
+  账号复核一次，非阻塞）；历史「静态 JS 壳页不可用于断言」不再适用。
+- **评审模型**：Guide 明文 double anonymized，§7 的该项闭合。
+- **门户**：4 个已验证入口（ScienceDirect 期刊主页、ISA 官方 contributing 页、
+  Elsevier 官方「How do I find and access my journal's submission system?」、
+  Elsevier EM 说明）+ 官方「从期刊主页 Submit your article 进入」；
+  `editorialmanager.com/<acronym>` 直连 **unverified、不猜**，投稿时确认。
+- **出版方指标**（ScienceDirect 官方页）：首决 1 天、审后决定 56 天、
+  投稿→录用 214 天、录用→上线 8 天；首决快 ≠ 录用快。
+- **仓库 licence**：作者确认 MIT LICENSE，已写入并公开。
+- **通讯作者完整邮政地址**：作者确认主校区地址，已写入 Title Page。
+
+仍开放：预印本政策、公开仓库与双盲张力、投稿时 EM 直连确认、投稿批准。
+不承诺录用、不宣布可直接投稿。
