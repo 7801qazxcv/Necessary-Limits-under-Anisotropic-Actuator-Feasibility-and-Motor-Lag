@@ -33,3 +33,10 @@ bracketed by two symmetric models in the main study; an IEEE TCSII reference is
 are marked N/A for the force-unit registry. Two superseded result files
 (`*_SUPERSEDED.json`) are kept read-only for provenance and are excluded from
 all statistics.
+
+- `author_initials.json` (2026-11-24): author given/family for all 24 cited
+  entries, taken from LIVE Crossref `/works/<doi>` and arXiv Atom API responses
+  (see `refs_backfill_verified.json` for the verification ledger, including the
+  24/24 surname-alignment check). Consumed by `build_refs_bib.py` ->
+  `author_display()` to emit `Family, Initials.` in `refs.bib`. No hand-typed
+  bibliographic data; citation keys are unchanged.

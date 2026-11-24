@@ -2,7 +2,7 @@
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\pdfinfo{/Title (A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class) /Subject (Quadrotor attitude recovery and actuator feasibility) /Keywords (Post-impulse recovery; non-recoverability bound; anisotropic actuator feasibility; motor lag; three-way domain decomposition)}
+\pdfinfo{/Title (A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class: Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag) /Subject (Quadrotor attitude recovery and actuator feasibility) /Keywords (Post-impulse recovery; non-recoverability bound; anisotropic actuator feasibility; motor lag; three-way domain decomposition)}
 \usepackage{amssymb,amsmath,amsthm,booktabs,graphicx,url,float}
 \usepackage[margin=2.2cm]{geometry}
 \emergencystretch=2em
@@ -632,7 +632,9 @@ value is plotted.}\label{fig:domains}
 two platforms differ by three orders of magnitude in $L^*$. Each panel plots
 the four impulse directions separately (roll, pitch, yaw, combination) rather
 than a mean over axes; all values are regenerated from the analytic result
-dictionaries.}
+dictionaries. On the synthetic platform the roll and pitch bounds coincide by
+symmetry, so those two curves overlap exactly; all four curves are distinct on
+the identified platform.}
 \label{fig:lstar}
 \end{figure}
 \begin{figure}[H]\centering
@@ -649,7 +651,8 @@ the identified platform.}\label{fig:aniso}
 symmetric-fast, symmetric-slow and asymmetric actuator models. Points are
 grouped by model and shaped by impulse direction
 (roll/pitch/yaw/combination), with a small horizontal jitter to expose
-overlaps; the effective sample count $n$ is printed in each group. The upper
+overlaps; the effective sample count $n$ is printed for each group that has
+points in the panel. The upper
 panel covers the full range and the lower panel enlarges the low-value
 region. A median line is drawn only for groups with non-zero spread: all
 symmetric-slow values equal the grid-floor impulse, so no error bar or median

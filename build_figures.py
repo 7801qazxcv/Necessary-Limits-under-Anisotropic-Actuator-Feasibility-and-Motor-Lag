@@ -15,7 +15,8 @@ syn=L("probe_v2_results.json"); real=L("probe_v2_REAL_results.json")
 ps=L("param_sensitivity.json"); asym=L("asym_diagnostic.json")
 
 plt.rcParams.update({"font.size":9,"axes.labelsize":9,"xtick.labelsize":8,"ytick.labelsize":8,
-                     "legend.fontsize":8,"axes.linewidth":0.8,"lines.linewidth":1.6})
+                     "legend.fontsize":8,"axes.linewidth":0.8,"lines.linewidth":1.6,
+                     "pdf.fonttype":42,"ps.fonttype":42})
 def style(ax):
     ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
     ax.grid(True,which="both",ls="--",alpha=0.3); ax.tick_params(direction="in")

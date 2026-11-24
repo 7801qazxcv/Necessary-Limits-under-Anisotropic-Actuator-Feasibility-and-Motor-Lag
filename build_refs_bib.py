@@ -7,6 +7,12 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 raw=json.load(open(os.path.join(HERE,"ref_meta_raw.json"),encoding="utf-8"))
 l2=json.load(open(os.path.join(HERE,"citation_layer2.json"),encoding="utf-8"))
 
+# Author given/family from LIVE Crossref/arXiv metadata; never hand-typed.
+try:
+    initials_map=json.load(open(os.path.join(HERE,"author_initials.json"),encoding="utf-8"))
+except FileNotFoundError:
+    initials_map={}
+
 def esc(s):
     if not s: return ""
     s=s.replace("&","\\&").replace("_","\\_").replace("%","\\%").replace("#","\\#")
@@ -22,6 +28,23 @@ def fam(auth):
         p=a.split()
         parts.append(p[-1] if p else "?")
     return " and ".join(parts)
+
+def author_display(bibkey, auth):
+    """Emit Family, Initials. from live metadata; fall back to old fam()."""
+    live=initials_map.get(bibkey)
+    if not live:
+        return fam(auth)
+    parts=[]
+    for a in live:
+        family=(a.get("family") or "").strip()
+        given=(a.get("given") or "")
+        # deterministic: initials from capital-initial tokens, skipping
+        # lowercase name particles (van/de/von/...) which arXiv folds into given
+        toks=[t for t in given.replace(".", " ").split() if t and t[0].isupper()]
+        ini=" ".join(t[0].upper()+"." for t in toks)
+        parts.append("%s, %s"%(family,ini) if ini else family)
+    return " and ".join(parts)
+
 
 def key_for(kind,ident,title,authors,year):
     first=fam(authors).split(" and ")[0].split()[-1] if authors else "Anon"
@@ -49,7 +72,7 @@ for r in l2["rows"]:
     else:
         lines.append("@misc{%s,"%bk)
     lines.append("  title        = {%s},"%title)
-    lines.append("  author       = {%s},"%fam(authors))
+    lines.append("  author       = {%s},"%author_display(bk, authors))
     if year: lines.append("  year         = {%s},"%year)
     if venue: lines.append("  %s = {%s},"%("booktitle" if v.get("type")=="proceedings-article" else "journal",venue))
     if v.get("volume"): lines.append("  volume       = {%s},"%v["volume"])

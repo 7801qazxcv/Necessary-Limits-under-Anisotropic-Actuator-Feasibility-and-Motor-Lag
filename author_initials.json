@@ -1,0 +1,366 @@
+{
+  "Zhang2024Finite": [
+    {
+      "given": "Zheng",
+      "family": "Zhang"
+    },
+    {
+      "given": "Xingwei",
+      "family": "Li"
+    },
+    {
+      "given": "Lilian",
+      "family": "Zhang"
+    }
+  ],
+  "Najafi2025Fixed": [
+    {
+      "given": "Amin",
+      "family": "Najafi"
+    },
+    {
+      "given": "Saleh",
+      "family": "Mobayen"
+    },
+    {
+      "given": "Abolfazl",
+      "family": "Jalilvand"
+    }
+  ],
+  "Gao2020Finite": [
+    {
+      "given": "Zijun",
+      "family": "Gao"
+    },
+    {
+      "given": "Jin",
+      "family": "Wang"
+    },
+    {
+      "given": "Yaping",
+      "family": "Tian"
+    }
+  ],
+  "Hu2025Adaptive": [
+    {
+      "given": "Zhong-Quan",
+      "family": "Hu"
+    },
+    {
+      "given": "Chang-Chun",
+      "family": "Hua"
+    },
+    {
+      "given": "Ya-Na",
+      "family": "Yang"
+    },
+    {
+      "given": "Liu-Liu",
+      "family": "Zhang"
+    }
+  ],
+  "Sun2020Upset": [
+    {
+      "given": "Sihao",
+      "family": "Sun"
+    },
+    {
+      "given": "Matthias",
+      "family": "Baert"
+    },
+    {
+      "given": "Bram Adriaan Strack van",
+      "family": "Schijndel"
+    },
+    {
+      "given": "Coen de",
+      "family": "Visser"
+    }
+  ],
+  "Hermeler2026REFLEX": [
+    {
+      "given": "Jakob",
+      "family": "Hermeler"
+    },
+    {
+      "given": "Luca",
+      "family": "Girardi"
+    },
+    {
+      "given": "Gabriel",
+      "family": "Maquignaz"
+    },
+    {
+      "given": "Stefan",
+      "family": "Leutenegger"
+    },
+    {
+      "given": "Stefano",
+      "family": "Mintchev"
+    }
+  ],
+  "Gaucher2026Dual": [
+    {
+      "given": "Valentin",
+      "family": "Gaucher"
+    },
+    {
+      "given": "Wenlong",
+      "family": "Zhang"
+    }
+  ],
+  "McDonough2017Fast": [
+    {
+      "given": "Kevin",
+      "family": "McDonough"
+    },
+    {
+      "given": "Ilya",
+      "family": "Kolmanovsky"
+    }
+  ],
+  "McDonough2014Recovera": [
+    {
+      "given": "Kevin",
+      "family": "McDonough"
+    },
+    {
+      "given": "Ilya",
+      "family": "Kolmanovsky"
+    },
+    {
+      "given": "Ella M.",
+      "family": "Atkins"
+    }
+  ],
+  "Biswas2026Control": [
+    {
+      "given": "Bhaskar",
+      "family": "Biswas"
+    },
+    {
+      "given": "Dmitry",
+      "family": "Ignatyev"
+    },
+    {
+      "given": "Argyrios",
+      "family": "Zolotas"
+    },
+    {
+      "given": "Antonios",
+      "family": "Tsourdos"
+    }
+  ],
+  "Ferrante2022Control": [
+    {
+      "given": "Francesco",
+      "family": "Ferrante"
+    },
+    {
+      "given": "Ricardo G.",
+      "family": "Sanfelice"
+    },
+    {
+      "given": "Sophie",
+      "family": "Tarbouriech"
+    }
+  ],
+  "Yu2023Exponent": [
+    {
+      "given": "Miaomiao",
+      "family": "Yu"
+    },
+    {
+      "given": "Shuchen",
+      "family": "Wu"
+    },
+    {
+      "given": "Xiaodi",
+      "family": "Li"
+    }
+  ],
+  "Gao2026Finite": [
+    {
+      "given": "Jing",
+      "family": "Gao"
+    },
+    {
+      "given": "Cuiping",
+      "family": "Lu"
+    },
+    {
+      "given": "Xiaodi",
+      "family": "Li"
+    }
+  ],
+  "Breeden2023Safety": [
+    {
+      "given": "Joseph",
+      "family": "Breeden"
+    },
+    {
+      "given": "Dimitra",
+      "family": "Panagou"
+    }
+  ],
+  "Le2026Residual": [
+    {
+      "given": "Thanh-Lam",
+      "family": "Le"
+    },
+    {
+      "given": "Min-Fu",
+      "family": "Hsieh"
+    }
+  ],
+  "Eschmann2024Data": [
+    {
+      "given": "Jonas",
+      "family": "Eschmann"
+    },
+    {
+      "given": "Dario",
+      "family": "Albani"
+    },
+    {
+      "given": "Giuseppe",
+      "family": "Loianno"
+    }
+  ],
+  "Ji2015Developm": [
+    {
+      "given": "Ankyda",
+      "family": "Ji"
+    },
+    {
+      "given": "Kamran",
+      "family": "Turkoglu"
+    }
+  ],
+  "Xu2022Adaptive": [
+    {
+      "given": "Gang",
+      "family": "Xu"
+    },
+    {
+      "given": "Yuanqing",
+      "family": "Xia"
+    },
+    {
+      "given": "Di‐Hua",
+      "family": "Zhai"
+    },
+    {
+      "given": "Weizhi",
+      "family": "Lyu"
+    }
+  ],
+  "Liu2021Antisatu": [
+    {
+      "given": "Kang",
+      "family": "Liu"
+    },
+    {
+      "given": "Xingxian",
+      "family": "Wang"
+    },
+    {
+      "given": "Rujing",
+      "family": "Wang"
+    },
+    {
+      "given": "Guowei",
+      "family": "Sun"
+    },
+    {
+      "given": "Xiaodong",
+      "family": "Wang"
+    }
+  ],
+  "Yu2022Fault": [
+    {
+      "given": "Wei",
+      "family": "Yu"
+    },
+    {
+      "given": "Jun",
+      "family": "Yan"
+    },
+    {
+      "given": "Xiaohu",
+      "family": "Pan"
+    },
+    {
+      "given": "Shilei",
+      "family": "Tan"
+    },
+    {
+      "given": "Hongwei",
+      "family": "Cao"
+    },
+    {
+      "given": "Yongduan",
+      "family": "Song"
+    }
+  ],
+  "Haimovich2019characte": [
+    {
+      "given": "Hernan",
+      "family": "Haimovich"
+    },
+    {
+      "given": "Jose L.",
+      "family": "Mancilla-Aguilar"
+    },
+    {
+      "given": "Paula",
+      "family": "Cardone"
+    }
+  ],
+  "Wijk2026Generali": [
+    {
+      "given": "David E. J. van",
+      "family": "Wijk"
+    },
+    {
+      "given": "Dohyun",
+      "family": "Lee"
+    },
+    {
+      "given": "Ersin",
+      "family": "Das"
+    },
+    {
+      "given": "Tamas G.",
+      "family": "Molnar"
+    },
+    {
+      "given": "Aaron D.",
+      "family": "Ames"
+    },
+    {
+      "given": "Joel W.",
+      "family": "Burdick"
+    }
+  ],
+  "Engelbrecht2013Multi": [
+    {
+      "given": "Jacobus A.",
+      "family": "Engelbrecht"
+    },
+    {
+      "given": "Simon J.",
+      "family": "Pauck"
+    },
+    {
+      "given": "Iain K.",
+      "family": "Peddle"
+    }
+  ],
+  "Dongmo2012Aircraft": [
+    {
+      "given": "Jean-Etienne",
+      "family": "Dongmo"
+    }
+  ]
+}
