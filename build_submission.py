@@ -7,7 +7,7 @@ import os, shutil, re
 HERE=os.path.dirname(os.path.abspath(__file__))
 PAPER=os.path.join(HERE,"paper")
 SUB=os.path.join(HERE,"submission")
-FILES=["main.tex","main.pdf","refs.bib"]
+FILES=["main.tex","main.pdf","refs.bib","title_page.tex","title_page.pdf","highlights.txt"]
 FIGDIR="figures"
 if os.path.isdir(SUB): shutil.rmtree(SUB)
 os.makedirs(os.path.join(SUB,FIGDIR))
@@ -24,9 +24,12 @@ Only the files listed below are included.
 
 | File | Role |
 |---|---|
-| `main.tex` | self-contained LaTeX source (pure LF, no \\input) |
+| `main.tex` | self-contained ANONYMIZED manuscript (pure LF, no \\input) |
 | `main.pdf` | compiled manuscript |
 | `refs.bib` | bibliography (24 verified entries) |
+| `title_page.tex` | separate title page (double-anonymized review) |
+| `title_page.pdf` | compiled title page for upload |
+| `highlights.txt` | 3-5 article highlights, <=85 characters each |
 | `figures/fig1.pdf` .. `fig4.pdf` | four figures |
 
 Regeneration of every displayed number: `experiments/run_all_experiments.py`

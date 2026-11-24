@@ -12,8 +12,8 @@ PROSE = r"""
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\pdfinfo{/Title (A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class) /Author (Sen Fu; Bin Liu) /Subject (Quadrotor attitude recovery and actuator feasibility) /Keywords (Post-impulse recovery; non-recoverability bound; anisotropic actuator feasibility; motor lag; three-way domain decomposition)}
-\usepackage{amssymb,amsmath,amsthm,booktabs,graphicx,url}
+\pdfinfo{/Title (A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class) /Subject (Quadrotor attitude recovery and actuator feasibility) /Keywords (Post-impulse recovery; non-recoverability bound; anisotropic actuator feasibility; motor lag; three-way domain decomposition)}
+\usepackage{amssymb,amsmath,amsthm,booktabs,graphicx,url,float}
 \usepackage[margin=2.2cm]{geometry}
 \emergencystretch=2em
 \tolerance=2000
@@ -33,33 +33,18 @@ __NUMBERS__
 Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class:
 Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag}
 
-\author[1]{Sen Fu\corref{cor1}\fnref{fn_orcid}}
-\ead{fs211314@gmail.com}
-\author[2]{Bin Liu}
-\ead{515321625@qq.com}
-\cortext[cor1]{Corresponding author}
-\fntext[fn_orcid]{ORCID: \url{https://orcid.org/0009-0001-8772-2449}}
-\address[1]{Changsha Vocational and Technical College, Changsha, Hunan, China}
-\address[2]{Hunan Institute of Advanced Technology, Changsha, Hunan, China}
-
 \begin{abstract}
-The problem addressed is whether, after an exogenous angular impulse, any control
-law can return a quadrotor inside a prescribed 60 deg attitude envelope within
-1.5 s when the actuator force-feasibility set is anisotropic and the motors
-respond with a first-order lag. We present a necessary non-recoverability bound, derived from
-the support function of that feasibility set, that is independent of the
-controller structure within the principal-axis trajectory class (Assumption A1);
-it bounds what no controller in that class can exceed, rather than certifying
-what a particular controller achieves. The headline result is that the bound holds with
-0 adversarial-arm violations on both a literature-anchored synthetic platform
-and a single identified Crazyflie platform. We then separate the theoretically
-certified domain, the numerically observed domain and the unverified region, and
-report the gap between the necessary bound and the best controller-certified
-sufficient boundary. On the identified platform the anisotropy advantage does
-not replicate: the yaw-to-roll sufficient-boundary ratio rises to 0.687 and
-baseline advantages vanish, so we do not claim these advantages on this
-platform. No hardware or flight-test evidence is claimed; all results are
-analytical and computational, obtained by numerical simulation only.
+The problem is whether any control law can restore a quadrotor to a prescribed
+60 deg attitude envelope within 1.5 s after an exogenous angular impulse under
+anisotropic actuator feasibility and first-order motor lag. We present a
+necessary non-recoverability bound, derived from the support function of that
+feasibility set, independent of controller structure within the principal-axis
+trajectory class (Assumption A1); it bounds what no controller in that class
+can exceed. The bound holds with 0 adversarial-arm violations on both synthetic
+and identified platforms. We report a three-way domain decomposition and the
+necessary-to-sufficient gap. On the identified platform the anisotropy
+advantage does not replicate, so we do not claim it there. No hardware evidence
+is claimed; all results are analytical and computational (simulation only).
 \end{abstract}
 
 \begin{keyword}
@@ -565,14 +550,14 @@ for the fair baseline comparison (V2--V4). Reporting the main-arm ratios here
 makes explicit that the certified domain, the weaker-disturbance observed
 domain and the unverified region are distinct objects.
 
-\begin{figure}[t]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig1.pdf}
 \caption{Three-way domain decomposition: certified necessary bound, observed
 sufficient boundary, and the unverified region between them. Fully normalised
 conceptual schematic; all axes are dimensionless and no measured or computed
 value is plotted.}\label{fig:domains}
 \end{figure}
-\begin{figure}[t]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig2.pdf}
 \caption{Necessary bound $L^*$ versus motor time constant $T_m$ on the
 (a) synthetic and (b) identified platforms, shown on two panels because the
@@ -582,7 +567,7 @@ than a mean over axes; all values are regenerated from the analytic result
 dictionaries.}
 \label{fig:lstar}
 \end{figure}
-\begin{figure}[t]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig3.pdf}
 \caption{Anisotropy ratios on both platforms against the conditional
 discriminator; the value above each bar is printed. The horizontal line at 0.6
@@ -590,7 +575,7 @@ is a study-specific conditional discriminator adopted for this comparison, not
 a universal physical threshold. The synthetic advantage does not replicate on
 the identified platform.}\label{fig:aniso}
 \end{figure}
-\begin{figure}[t]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=0.86\linewidth]{figures/fig4.pdf}
 \caption{Failure boundary: first failing angular-velocity jump across
 symmetric-fast, symmetric-slow and asymmetric actuator models. Points are
@@ -696,34 +681,14 @@ source title/abstract (\Nsupported{} supported, \Nnuance{} supported with an
 explicit nuance, \Nmis{} misattributions); one source is a non-peer-reviewed
 preprint and is labelled as such.
 
-\textbf{Genre and scope.} Because the evidence is a theorem plus a computational
-verification with an explicit negative cross-platform result, and because no
-hardware validation exists, this work is positioned as a boundary-characterisation
-short article rather than a controller-design or experimental study. The
-classification matters: a full-length control paper would be judged on
-substantive new demonstrated performance, whereas the honest contribution here
-is a limit that no controller can exceed together with a public account of where
-the limit stops being informative. We state the object of study (recoverability
-bounds under anisotropic actuation) separately from the application vehicle (a
-quadrotor), so the result is read at the control-theory level.
-
-{\raggedright
-\textbf{Declarations.} The authors declare no competing interests. Data
-availability: all result artifacts, regeneration scripts and the manuscript
-source are publicly available at
-\url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
-\textbf{CRediT author contributions.} Sen Fu: conceptualization,
-methodology, formal analysis, writing -- original draft, writing -- review
-and editing, and corresponding author. Bin Liu: validation, data curation,
-and writing -- review and editing.
-\textbf{Funding.} No funding was received for this work.
-\par}
-
-\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
-\label{sec:ai}
-During the preparation of this work the authors used AI tools for language
-translation and polishing only. The authors reviewed and verified all output and
-take full responsibility for the content of the publication.
+\textbf{Contribution boundary.} The evidence is a theorem plus a computational
+verification with an explicit negative cross-platform result, and no hardware
+validation exists. The contribution is therefore a limit that no controller can
+exceed, together with a public account of where that limit stops being
+informative, rather than a new controller or a demonstrated performance gain.
+We state the object of study (recoverability bounds under anisotropic actuation)
+separately from the application vehicle (a quadrotor), so the result is read at
+the control-theory level.
 
 \section{Conclusions}
 \label{sec:conclusions}
@@ -741,9 +706,19 @@ necessary bound and the explicit account of where it stops being informative,
 not a new controller. All conclusions are analytical and computational; no
 hardware or flight-test claim is made, and no acceptance outcome is promised.
 
-\section*{Acknowledgements}
-The authors thank the maintainers of the public quadrotor parameter registry and
-the open bibliographic APIs used for verification.
+{\raggedright
+\textbf{Declarations.} The authors declare no competing interests. Data
+availability: all result artifacts, regeneration scripts and the manuscript
+source are publicly available at
+\url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
+\textbf{Funding.} No funding was received for this work.
+\par}
+
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+\label{sec:ai}
+During the preparation of this work the authors used AI tools for language
+translation and polishing only. The authors reviewed and verified all output and
+take full responsibility for the content of the publication.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}
@@ -765,3 +740,66 @@ tex=PROSE.replace("__NUMBERS__",macros)
 out=os.path.join(PAPER,"main.tex")
 open(out,"w",encoding="utf-8",newline="\n").write(tex)
 print("WROTE",out,"chars",len(tex),"CR bytes",tex.count("\r"))
+
+
+# ---- Research Article (ISA Transactions): separate title page + Highlights ----
+TITLE_PAGE = r"""\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage[margin=2.2cm]{geometry}
+\pdfinfo{/Title (Title page: A Controller-Independent Non-Recoverability Bound for Post-Impulse Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class) /Author (Sen Fu; Bin Liu) /Subject (Title page for double-anonymized review; ISA Transactions)}
+\begin{document}
+\begin{center}
+{\Large\bfseries A Controller-Independent Non-Recoverability Bound for Post-Impulse
+Quadrotor Attitude Recovery within the Principal-Axis Trajectory Class:
+Necessary Limits under Anisotropic Actuator Feasibility and Motor Lag}
+\par\vspace{1.2em}
+Sen Fu$^{1,*}$, Bin Liu$^{2}$
+\par\vspace{0.6em}
+$^{1}$Changsha Vocational and Technical College, Changsha, Hunan, China\\
+$^{2}$Hunan Institute of Advanced Technology, Changsha, Hunan, China
+\par\vspace{0.6em}
+$^{*}$Corresponding author. Email: \url{fs211314@gmail.com}\\
+ORCID: \url{https://orcid.org/0009-0001-8772-2449}
+\par\vspace{0.8em}
+Submitted as a Research Article (Analysis category) to ISA Transactions.
+\end{center}
+
+\vspace{1em}
+\section*{Acknowledgements}
+The authors thank the maintainers of the public quadrotor parameter registry and
+the open bibliographic APIs used for verification.
+
+\section*{Declaration of competing interests}
+The authors declare no competing interests.
+
+\section*{CRediT author contributions}
+Sen Fu: conceptualization, methodology, formal analysis, writing -- original
+draft, writing -- review and editing, and corresponding author. Bin Liu:
+validation, data curation, and writing -- review and editing.
+
+\section*{Funding}
+No funding was received for this work.
+
+\section*{Data availability}
+{\raggedright
+All result artifacts, regeneration scripts and the manuscript source are
+publicly available at
+\url{https://github.com/7801qazxcv/Necessary-Limits-under-Anisotropic-Actuator-Feasibility-and-Motor-Lag}.
+\par}
+\end{document}
+"""
+open(os.path.join(PAPER,"title_page.tex"),"w",encoding="utf-8",newline="\n").write(TITLE_PAGE)
+
+HIGHLIGHTS = [
+ "Controller-independent necessary non-recoverability bound for post-impulse recovery",
+ "The bound holds with 0 adversarial-arm violations on both tested platforms",
+ "Three-way decomposition separates certified, observed and unverified domains",
+ "Anisotropy advantage does not replicate on the identified Crazyflie platform",
+ "No hardware evidence is claimed; results are analytical and simulation-only",
+]
+assert 3 <= len(HIGHLIGHTS) <= 5
+assert all(len(h) <= 85 for h in HIGHLIGHTS), [len(h) for h in HIGHLIGHTS]
+open(os.path.join(PAPER,"highlights.txt"),"w",encoding="utf-8",newline="\n").write("\n".join(HIGHLIGHTS)+"\n")
+print("WROTE paper/title_page.tex and paper/highlights.txt (5 bullets, max %d chars)" % max(len(h) for h in HIGHLIGHTS))

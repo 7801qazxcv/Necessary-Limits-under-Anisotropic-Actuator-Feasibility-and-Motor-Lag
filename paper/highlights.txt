@@ -1,0 +1,5 @@
+Controller-independent necessary non-recoverability bound for post-impulse recovery
+The bound holds with 0 adversarial-arm violations on both tested platforms
+Three-way decomposition separates certified, observed and unverified domains
+Anisotropy advantage does not replicate on the identified Crazyflie platform
+No hardware evidence is claimed; results are analytical and simulation-only

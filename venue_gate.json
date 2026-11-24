@@ -1,0 +1,182 @@
+{
+  "task": 1,
+  "date": "2026-11-18",
+  "scope": "per-year SCI venue gate for a boundary-characterisation short article",
+  "constraints_pinned": {
+    "indexing": "SCIE required; verified per ISSN (WoS core = Science Citation Index Expanded, status Active)",
+    "warning_list_reading": "ZERO HISTORY (satisfies both 'currently not on' and 'never on' institutional readings)",
+    "article_type": "match to evidence: short / initial proof-of-concept / boundary result, no hardware validation",
+    "excluded": [
+      "vehicle/platform journals (Drones/Aerospace/JGCD/TAES)",
+      "top-tier (Automatica/TAC)",
+      "any venue with a warning-list hit"
+    ],
+    "apc": "author funding status not closed -> prefer hybrid venues with a free subscription route; do not assume affordability"
+  },
+  "warning_list": {
+    "editions_checked": [
+      "2020",
+      "2021",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "no_2022_edition": true,
+    "no_2026_plus": "CAS official notice 2026-03-27 (las.cas.cn/news/tzgg/202603/t20260327_8178738.html): from 2026 the centre will no longer update or publish the journal ranking table -> 2025 is the last edition",
+    "source": "https://kyc.fjut.edu.cn/2025/1105/c6371a260318/page.htm (HTML tables; NOT the image-only reposts at kjc.zhku.edu.cn / journals.csu.edu.cn which fail the rendered-table check)",
+    "verifier": "research/sci-venue-selection/scripts/verify_warning_list.py (date-marker split + per-edition positive controls + HTML unescape + word-boundary case-insensitive grep)",
+    "controls": "ALL 5 editions passed >=1 positive control (IEEE Access/Sustainability/2020, Vaccines/Shock and Vibration/2021, MACHINES/AEROSPACE/IJCAS/2023, CANCERS/MULTIMEDIA TOOLS/2024, NUMERICAL HEAT TRANSFER/SCALABLE COMPUTING/2025) -> block alignment proven, clean verdict is not a false negative",
+    "candidates": "all 8 candidate name variants (incl. both IET CTA spellings) = 0 hits across all 5 editions -> never_warned",
+    "hit_confirmation": "no hits, so no ISSN disambiguation needed; homonym risk noted (JOURNAL OF SENSORS 1687-725X vs Sensors 1424-8220; IJCAS 2023 hit is NOT among our candidates)"
+  },
+  "index_verification": {
+    "primary_channel": "mjl.clarivate.com/search-results?issn=<ISSN> returned the SAME 11427-byte JS shell for every ISSN, containing both SCIE and ESCI strings in generic footer text -> NOT a per-ISSN result. Refused, not used.",
+    "channel_used": "wos-journal.info per-journal records (WoS journal-profile mirror) + publisher Abstracting & Indexing sections, cross-checked by ISSN",
+    "cross_check": "IET CTA Wiley official A&I explicitly lists 'Science Citation Index Expanded (Clarivate Analytics)'",
+    "limitation": "Clarivate per-ISSN confirmation requires a free login; the static channel could not be closed. Recorded as an author-side verification item, NOT asserted as verified at Clarivate.",
+    "results": {
+      "0924-090X": {
+        "journal": "Nonlinear Dynamics",
+        "scie": true,
+        "status": "Active",
+        "jif": 5.7,
+        "source": "wos-journal.info/journalid/9290"
+      },
+      "1049-8923": {
+        "journal": "Int. J. Robust and Nonlinear Control",
+        "scie": true,
+        "status": "Active",
+        "jif": 3.1,
+        "source": "wos-journal.info/journalid/14565"
+      },
+      "0016-0032": {
+        "journal": "J. Franklin Institute",
+        "scie": true,
+        "status": "Active",
+        "jif": 3.7,
+        "source": "wos-journal.info/journalid/14073; publisher page IF 3.7 / CiteScore 6.4"
+      },
+      "1751-570X": {
+        "journal": "Nonlinear Analysis: Hybrid Systems",
+        "scie": true,
+        "status": "Active",
+        "jif": 3.2,
+        "source": "wos-journal.info/journalid/11471"
+      },
+      "1751-8644": {
+        "journal": "IET Control Theory & Applications",
+        "scie": true,
+        "status": "Active",
+        "jif": 2.0,
+        "source": "wos-journal.info/journalid/17137 + Wiley official A&I"
+      },
+      "0019-0578": {
+        "journal": "ISA Transactions",
+        "scie": true,
+        "status": "Active",
+        "jif": 6.5,
+        "source": "wos-journal.info/journalid/7194"
+      },
+      "1063-6536": {
+        "journal": "IEEE Trans. Control Systems Technology",
+        "scie": true,
+        "status": "Active",
+        "jif": 4.4,
+        "source": "wos-journal.info/journalid/11514"
+      }
+    }
+  },
+  "crossref_2024_item_counts": {
+    "Nonlinear Dynamics": 1586,
+    "Int. J. Robust and Nonlinear Control": 647,
+    "J. Franklin Institute": 745,
+    "Nonlinear Analysis: Hybrid Systems": 98,
+    "IET Control Theory & Applications": null,
+    "ISA Transactions": 474,
+    "IEEE Trans. Control Systems Technology": 210,
+    "note": "Crossref item count for calendar 2024, NOT a publisher acceptance figure. IET CTA: display-name container-title filter returns 0 (name mismatch in Crossref); recorded as a DATA GAP, not zero output."
+  },
+  "article_types_verified": {
+    "ISA Transactions": "Official Guide: 'Technical Notes: Present new concepts or initial proof-of-concept results on innovative approaches. The manuscripts would be short, perhaps two journal pages, and would not require extensive comprehensive defence required of regular papers.' Also: 'Research Articles focus on the fundamental analysis or mathematics of a technique, and are illustrated with simulations' -> simulations are explicitly acceptable. BEST genre match.",
+    "J. Franklin Institute": "Official Guide: 'Short Communications are brief papers of no more than four to five journal pages ... accepted only if in the opinion of the editors they are of exceptional interest and urgency' (high bar); regular = 'original research papers of substance'. Requires a Novelty Statement, competing-interest declaration, and a generative-AI declaration.",
+    "prescreening": "No explicit editorial triage / pre-screening policy found in the fetched Guides for JFI / ISA Trans / NAHS. Not claimed absent; flagged as 'no explicit policy retrieved'."
+  },
+  "publisher_metrics": {
+    "J. Franklin Institute": {
+      "apc_oa_usd": 3420,
+      "subscription": "No publication fee charged to authors",
+      "submission_to_acceptance_days": 203,
+      "acceptance_to_online_days": 6,
+      "source": "sciencedirect.com/journal/journal-of-the-franklin-institute (publisher page)"
+    },
+    "ISA Transactions": {
+      "submission_to_first_decision_days": 1,
+      "submission_to_decision_after_review_days": 56,
+      "submission_to_acceptance_days": 214,
+      "acceptance_to_online_days": 8,
+      "source": "sciencedirect.com/journal/isa-transactions (publisher page)"
+    },
+    "speed_caveat": "ISA Trans '1 day Submission to first decision' is a triage-speed figure (how fast a submission is refused), NOT a review-speed ranking input. Per skill discipline this column is suppressed for ranking; the comparable figure is 56 days to decision after review."
+  },
+  "recommendation": {
+    "primary": "ISA Transactions - article type: Technical Note",
+    "why": "Only venue with an explicitly low-threshold short type that accepts initial proof-of-concept results without the comprehensive defence of a regular paper, and explicitly permits simulation-illustrated fundamental analysis -> exact match for an honest boundary result with no hardware validation. SCIE/Active per ISSN, zero warning history, Elsevier hybrid with a free subscription route (funding status unclosed).",
+    "risks": [
+      "JIF 6.5 = highest threshold in the shortlist",
+      "Aims & scope says 'bridge the gap between theory and practice' and 'credible demonstration' -> a pure-theory paper needs the scope split stated explicitly (fundamental analysis of recoverability, simulation-illustrated)",
+      "1-day first decision suggests editorial triage; the positioning sentence and novelty statement are load-bearing",
+      "IET CTA flagged Fully OA by the mirror (possible APC) -> not preferred while funding is unclosed"
+    ],
+    "runner_up": "Journal of the Franklin Institute - Regular paper with mandatory Novelty Statement (or Short Communication only if editors judge exceptional interest)",
+    "runner_up_why": "Most theory-friendly Aims & Scope ('Engineering and Applied Mathematics', 'Control Systems' as one of three main topic areas), lower JIF 3.7, 745 items/yr, Elsevier hybrid free subscription route, 203 d submission-to-acceptance. Costs: no low-threshold short type, so the honest boundary paper must stand as a regular paper.",
+    "third": "Nonlinear Analysis: Hybrid Systems (scope closest to impulsive/hybrid systems, JIF 3.2, but only 98 Crossref items in 2024 = narrow door)",
+    "template_cost": "ISA Trans and JFI are both Elsevier -> same elsarticle class, same declaration-block set, no class download. Runner-up switch costs near zero.",
+    "class_check": "kpsewhich elsarticle.cls (performed in task 2)"
+  },
+  "portal": {
+    "note": "Never paste a portal URL from memory. Verified from publisher pages: JFI 'Submit your article' -> https://www.editorialmanager.com/FI/default.aspx. ISA Trans portal URL to be taken from its own Guide for Authors at submission time; not guessed here.",
+    "isa_portal_status": "not_verified_from_publisher_page"
+  },
+  "open_items": [
+    "Clarivate MJL per-ISSN SCIE confirmation requires free login -> author-side check before upload",
+    "ISA Trans portal submit URL and article-type label to confirm on the journal's own author page at upload",
+    "Author-only values (names/ORCID/funding/official affiliation/AI-use disclosure approval) remain unclosed",
+    "Quartile (JCR/CAS) is year- and system-dependent; not asserted from recall. CAS stopped publishing the ranking table from 2026."
+  ],
+  "retarget_2026_11_24": {
+    "user_instruction": "改投 Research Article",
+    "primary": "ISA Transactions - article type: Research Article (Analysis category)",
+    "previous_primary_SUPERSEDED": "ISA Transactions - article type: Technical Note",
+    "venue_unchanged": true,
+    "source": "https://www.sciencedirect.com/journal/isa-transactions/publish/guide-for-authors",
+    "verified_official_hard_gates": {
+      "abstract_words_max": 125,
+      "keywords_range": [
+        1,
+        6
+      ],
+      "highlights_required": true,
+      "highlights_bullets": [
+        3,
+        5
+      ],
+      "highlights_max_chars": 85,
+      "double_anonymized": true,
+      "separate_title_page_required": true,
+      "ai_declaration_before_references": true,
+      "graphical_abstract_required": false,
+      "technical_note_title_prefix_required": false
+    },
+    "status_after_retarget": {
+      "abstract_words": 123,
+      "keywords": 5,
+      "highlights": 5,
+      "abstract_cap_gate": "PASS",
+      "score": "100/100",
+      "deliver_gate": "PASS",
+      "gate_check": "OVERALL PASS",
+      "no_drift": true
+    },
+    "honest_caveat": "Raises the evidence threshold: Technical Notes are exempt from 'extensive comprehensive defence required of regular papers'; Research Articles are not. L3 novelty/significance unchanged."
+  }
+}
