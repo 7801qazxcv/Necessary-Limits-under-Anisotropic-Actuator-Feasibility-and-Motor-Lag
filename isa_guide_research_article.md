@@ -1,7 +1,7 @@
 # ISA Transactions Guide for Authors — article-type evidence (internal)
 
 **Verified**: 2026-11-24 by fetching https://www.sciencedirect.com/journal/isa-transactions/publish/guide-for-authors
-(cache: `~/AppData/Local/hermes/profiles/ai-paper/cache/web/www.sciencedirect.com-6982747696.md`)
+(full fetched page archived locally as an internal verification artifact)
 
 ## Article types (verbatim)
 > *ISA Transactions* publishes **Research Articles**, **Practice Articles** & **Letters**.

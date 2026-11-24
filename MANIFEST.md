@@ -14,7 +14,7 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `citation_layer2.json` | 41161 | `cc3375ecb9eb2a2161ebf0ca4430da4839391b6438bfca1e001585f43037710e` |
 | `experiments/run_all_experiments.py` | 5677 | `e3694fd86313c4b4d0b36019ed9838c36e51691ad57a82d92900a0720e8eafcf` |
 | `genre_spec.md` | 18201 | `862243aca253bc44b6497abf0494b9d42285914f0ca481ebaa973f2702696760` |
-| `isa_guide_research_article.md` | 3220 | `c24f6929841b5013b37c8f62b796ab48bf4ebca9efb366213403d6e1b3618f90` |
+| `isa_guide_research_article.md` | 3196 | `9ad3f01caeef84a81436cc5ca79af73dc42d75ddfa67378c76060b5bf17adc18` |
 | `m1_lemma.json` | 3066 | `58e4f9b80dcec19be820ca6727b89b41d25217c45522d1308cb431f152148313` |
 | `m1_lemma.py` | 5799 | `a9fca5c4553e99098357014a645d4ba27bcdd64a55a6d555dc96e936458b1a80` |
 | `m1_lemma_correction.py` | 3006 | `0072f0b9e6df494d2a692438018b1973384be23e8c4a12476a4c2b7ad48fbd71` |
