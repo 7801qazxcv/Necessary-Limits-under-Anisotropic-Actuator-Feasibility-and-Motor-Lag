@@ -65,8 +65,6 @@ for r in l2["rows"]:
             lines.append("  note         = {Also published as DOI %s},"%v["doi_crosslisted"].replace("_","\\_"))
     if v.get("type")=="posted-content":
         lines.append("  note         = {Preprint / posted-content; NOT peer-reviewed},")
-    if not v.get("abstract"):
-        lines.append("  note         = {%s},"%(("Crossref has no abstract; content verified via publisher page" if kind=="DOI" else "arXiv abstract available")))
     lines.append("}")
     entries.append("\n".join(lines))
     print("bibkey %-24s <- %s %s"%(bk,kind,k))
