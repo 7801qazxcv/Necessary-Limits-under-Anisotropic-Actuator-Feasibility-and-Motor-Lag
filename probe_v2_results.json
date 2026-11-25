@@ -8453,6 +8453,7 @@
   "probe": "v2",
   "status": "DONE",
   "prereg": "preregistration_probe_v2.md",
+  "platform": "synthetic literature-anchored platform",
   "params": {
    "m": 0.8,
    "g": 9.81,
@@ -8513,6 +8514,7 @@
    "omega_max": 900.0,
    "u_hov": 1.9620000000000002,
    "u_max": 6.35688,
+   "applicable": true,
    "pass": true
   },
   "S4_torque_chain": {
@@ -17650,5 +17652,91 @@
   "notes": [
    "4 degenerate cells (non-monotone recovery domain) excluded from statistics, reported verbatim"
   ]
+ },
+ "baseline_health": {
+  "0.02|qpd": {
+   "stable": true,
+   "max_phi_dw0": 0.002854949798210659,
+   "w_final_dw0": 0.03488751139129625,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.02|smc": {
+   "stable": true,
+   "max_phi_dw0": 0.00012416197973871138,
+   "w_final_dw0": 0.001637210867527637,
+   "Kp": 2.0,
+   "Kd": 4.0
+  },
+  "0.02|qpd_ff": {
+   "stable": true,
+   "max_phi_dw0": 0.005127416554283471,
+   "w_final_dw0": 0.05321293350142422,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.02|proposed": {
+   "stable": true,
+   "max_phi_dw0": 0.005848976555272488,
+   "w_final_dw0": 0.02352445861268396,
+   "Kp": 10.0,
+   "Kd": 2.0
+  },
+  "0.05|qpd": {
+   "stable": true,
+   "max_phi_dw0": 0.003959377969602416,
+   "w_final_dw0": 0.05534133016301675,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.05|smc": {
+   "stable": true,
+   "max_phi_dw0": 0.00015466045496444406,
+   "w_final_dw0": 0.0031009009459512767,
+   "Kp": 2.0,
+   "Kd": 4.0
+  },
+  "0.05|qpd_ff": {
+   "stable": true,
+   "max_phi_dw0": 0.00591096533552179,
+   "w_final_dw0": 0.07846361353721146,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.05|proposed": {
+   "stable": true,
+   "max_phi_dw0": 0.0068859081802592256,
+   "w_final_dw0": 0.04255543987152991,
+   "Kp": 10.0,
+   "Kd": 2.0
+  },
+  "0.1|qpd": {
+   "stable": true,
+   "max_phi_dw0": 0.008497863204151707,
+   "w_final_dw0": 0.13340834313583097,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.1|smc": {
+   "stable": true,
+   "max_phi_dw0": 0.00023430898982642075,
+   "w_final_dw0": 0.00597140990477898,
+   "Kp": 2.0,
+   "Kd": 4.0
+  },
+  "0.1|qpd_ff": {
+   "stable": true,
+   "max_phi_dw0": 0.009707110091664896,
+   "w_final_dw0": 0.12024513709658989,
+   "Kp": 6.0,
+   "Kd": 1.0
+  },
+  "0.1|proposed": {
+   "stable": true,
+   "max_phi_dw0": 0.007997507907341227,
+   "w_final_dw0": 0.032192286280166814,
+   "Kp": 10.0,
+   "Kd": 2.0
+  }
  }
 }

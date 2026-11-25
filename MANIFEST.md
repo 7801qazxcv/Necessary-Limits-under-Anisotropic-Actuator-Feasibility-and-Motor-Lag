@@ -5,7 +5,7 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | file | bytes | sha256 |
 |---|---|---|
 | `LICENSE` | 1068 | `ff54d3fa03d2de1304d917c97984c34246f477b9e9bac0acdc85a43ab5af0cb3` |
-| `asym_diagnostic.json` | 25702 | `4e2e089cc09bc8361252ea4f68a9167ea38f64dd0a3bc950ea3ab2fc04254fae` |
+| `asym_diagnostic.json` | 25810 | `59b4ffec2c5be15a591445a0b540d8dc8cb0dc1103eefb066583e23b849e44c6` |
 | `asym_diagnostic.py` | 7114 | `b23e97be4e128ee413ad1c97591b9b76c7788818e97cbe4d2d205dbb66285c44` |
 | `author_initials.json` | 5677 | `7a4c5e9fc7b44b081e59fc173c5a5244a34b08f006035ff6244efd5c2454fab7` |
 | `build_figures.py` | 6579 | `88a91fb8c67cfd5998e275872d171ad7bf8a97fbeec0c301e9de4f84ec69733b` |
@@ -27,10 +27,10 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `math_redteam.py` | 4083 | `1b5fa1881dcd970fef6a210b1066b3fdd8daccbb740efb8a7df0719da440cf51` |
 | `numbers.tex` | 2350 | `59e6ab0da5a8737767cebee2e2c48d99a0b49c7a3167705a29e3e1356511da70` |
 | `paper/baseline_set.md` | 1983 | `a2709403f577fd4c60ab7a494226502962528e835a3697c86f6edf0ec952c4d7` |
-| `paper/figures/fig1.pdf` | 19561 | `51f04eec7095bb5e5884c1c3b180cf54e247ed467680c9982db489ae8e74e4f3` |
-| `paper/figures/fig2.pdf` | 20321 | `08f60140791e37d4e37ce0f7ca97880b1f801b22b0f018ae54687f21bf970010` |
-| `paper/figures/fig3.pdf` | 16043 | `7e7dbe037464dbfef736f4f0d6cc2b1b44feac1fa3299a16db1d9a0798920f80` |
-| `paper/figures/fig4.pdf` | 22732 | `3539de99142d27cb1802d478f1e81386b49449e1a7117e84a948c7b9b707c865` |
+| `paper/figures/fig1.pdf` | 19561 | `383fb197a4ee8ed760a2e5c9f959f36ec0cff4a51c3c0b8c44d542ae635594e4` |
+| `paper/figures/fig2.pdf` | 20321 | `64f811314f63b6e3753d1e289d574fa29c7a13c8a17f13f59e9ed49890425ba9` |
+| `paper/figures/fig3.pdf` | 16043 | `81839b333cc2757b51545c209051d7a314d88e4801c9cd92f4965d907ae79954` |
+| `paper/figures/fig4.pdf` | 22732 | `eef63db93a7489687abf2d151778048fccd2f4ce8f458b7c278e61cd3b1b1487` |
 | `paper/highlights.txt` | 389 | `d1e4892d4a719f1a5d8e1e81c2ba8856f05317c1a1839ac14c7111dec4f98916` |
 | `paper/main.pdf` | 462268 | `edeceedc1a441acc35f76c4c46224f5cfdfff234cb6d56d4dba5b4adf6c9e3a8` |
 | `paper/main.tex` | 44313 | `b2b4e20624af74c7c4f05152b7502ca34e3577a73aaf6b7738d30ad1148ae4e5` |
@@ -55,7 +55,7 @@ SHA-256 of every file follows. Generated mechanically; no values transcribed by 
 | `probe_v2_amendment3.md` | 2888 | `0f7ae3bef4618e8ed36fbde2edbf5e8714ead1f2dde05ec12c8e6ff723b2a48c` |
 | `probe_v2_amendment4.md` | 2926 | `24b4e8691ba42f0c66b6f7fa0e83a01c1f5121cb258dd0f222af1bfef7a121e9` |
 | `probe_v2_design_probe.json` | 9383 | `a04e0c4f6540a3bb763f1c8fbd7a46528a6f54f97fa4b354d4d197fd4514345e` |
-| `probe_v2_results.json` | 175250 | `7a062bd6616fe3b49cf3cf35c6f6cccc7754c50bee5f9580058b7003952505d3` |
+| `probe_v2_results.json` | 177227 | `030153679a1b5335b6edc155b01a25e68f4c432b47bbcd55c4136daf85e97525` |
 | `real_platform_config.json` | 4667 | `e0f9714b6843907f7d16f626e98a23fc12635661dc25c5bd7f35fe904e37b9e9` |
 | `ref_verify_layer1.py` | 4312 | `bc4ae7e653bf72384870462768d0d5432cb1ba4a744fba9b7a02bbdba54d47ac` |
 | `ref_verify_layer2.py` | 13413 | `00e025f2a8cca37d514f90ca10be1980077f97077b1129910f7d6fd03a771447` |
